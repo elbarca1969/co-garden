@@ -1,24 +1,103 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type    | Options                   |
+| ------------------ | ------- | ------------------------- |
+| nickname           | string  | null: false               |
+| user_name          | string  | null: false, unique: true |
+| introduction       | string  |                           |
+| prefecture_id      | integer |                           |
+| birthday           | date    |                           |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :contents
+- has_many :relationships
+- has_many :followings, through: :relationships
+- has_many :reverse_of_relationships
+- has_many :followers, through: :reverse_of_relationships
+- has_many :comments
+- has_many :tries
+- has_many :answers
+- belongs_to_active_hash :prefecture
 
-* Configuration
 
-* Database creation
+## contents テーブル
 
-* Database initialization
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| grade_id    | integer    | null: false                    |
+| subject_id  | integer    | null: false                    |
+| category    | string     | null: false                    |
+| question    | text       | null: false                    |
+| answer      | text       | null: false                    |
+| explanation | text       |                                |
+| release_id  | integer    | null: false                    |
+| user        | references | null: false, foreign_key: true | 
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- has_many :tries
+- has_many :answers
+- has_many :comments
+- has_many_attached: images
+- belongs_to :user
+- belongs_to_active_hash :grade
+- belongs_to_active_hash :subject
+- belongs_to_active_hash :release
 
-* Deployment instructions
 
-* ...
+## comments テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| comment | text       | null: false                    |
+| user    | references | null: false, foreign_key: true |
+| content | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :content
+
+
+## tries テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| content | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :content
+
+
+## answers テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| content | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :content
+
+
+## relationships テーブル
+
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| user     | references | null: false, foreign_key: true |
+| follow   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :follow
