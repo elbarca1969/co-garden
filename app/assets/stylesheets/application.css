@@ -34,3 +34,8 @@ legend{color:#000}
 * {
   box-sizing: border-box;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
