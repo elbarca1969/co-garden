@@ -159,3 +159,20 @@ header {
   border: 1px solid #333;
   border-radius: 3px;
 }
+
+.contents-post-icon a {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 10px 15px;
+  border: 2px solid #333;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.contents-post-icon a:hover {
+  background-color: #444;
+  border: 2px solid #444;
+}
