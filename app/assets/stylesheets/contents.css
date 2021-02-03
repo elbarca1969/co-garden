@@ -38,3 +38,42 @@ header {
   background-color: #333;
   color: rgb(255, 255, 255);
 }
+
+.wrapper {
+  background-color: #EFEFEF;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.main {
+  width: 1024px;
+  margin: 70px auto 150px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.main-header-left {
+  margin-right: 30px;
+}
+
+.main-header-left a,
+.main-header-right a {
+  display: block;
+  width: 300px;
+  padding: 10px 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-header-left a:hover,
+.main-header-right a:hover {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+}
