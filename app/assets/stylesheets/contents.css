@@ -104,7 +104,7 @@ header {
   width: 400px;
 }
 
-.main-contents {
+.main-content {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
@@ -112,49 +112,49 @@ header {
   padding: 10px;
 }
 
-.main-contents-upper {
+.main-content-upper {
   display: flex;
 }
 
-.main-contents-upper-nickname a {
+.main-content-upper-nickname a {
   font-size: large;
   font-weight: bold;
 }
 
-.main-contents-upper-username a,
-.main-contents-upper-date {
+.main-content-upper-username a,
+.main-content-upper-date {
   color: #999;
 } 
 
-.main-contents-center {
+.main-content-center {
   display: flex;
 }
 
-.main-contents-center-list {
+.main-content-center-list {
   margin-right: 10px;
 }
 
-.main-contents-question {
+.main-content-question {
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
   padding: 10px;
   margin: 10px 0;
 }
 
-.main-contents-question a {
+.main-content-question a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
 
-.main-contents-lower {
+.main-content-lower {
   display: flex;
   justify-content: space-around;
 }
 
-.main-contents-lower-answer,
-.main-contents-lower-try {
+.main-content-lower-answer,
+.main-content-lower-try {
   padding: 5px;
   border: 1px solid #333;
   border-radius: 3px;
