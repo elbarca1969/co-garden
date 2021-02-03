@@ -77,3 +77,29 @@ header {
   background-color: #333;
   color: rgb(255, 255, 255);
 }
+
+.main-search {
+  width: 630px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.main-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-search-grade,
+.main-search-subject,
+.main-search-category {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+
+.main-search-category {
+  width: 400px;
+}
