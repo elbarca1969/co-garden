@@ -39,6 +39,34 @@ header {
   color: rgb(255, 255, 255);
 }
 
+.user-icon {
+  position: relative;
+}
+
+.user-icon-menu {
+  position: absolute;
+  right: -30px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.user-icon-menu a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: small;
+  border: none;
+  border-radius: 5px;
+  margin: 0%;
+  padding: 0 10px;
+}
+
+.user-icon-menu a:hover {
+  color: black;
+  background-color: rgb(250, 250, 250);
+}
+
 .wrapper {
   background-color: #EFEFEF;
   height: 100vh;
