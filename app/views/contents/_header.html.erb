@@ -29,6 +29,14 @@
       <%= link_to root_path do %>
         <i class="fa fa-user fa-fw"></i>
       <% end %>
+      <div class="user-icon-menu">
+        <div class="user-icon-menu-profile">
+          <%= link_to current_user.nickname, root_path %>
+        </div>
+        <div class="user-icon-menu-logout">
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
