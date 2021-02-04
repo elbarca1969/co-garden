@@ -34,7 +34,7 @@
           <%= link_to current_user.nickname, root_path %>
         </div>
         <div class="user-icon-menu-logout">
-          <%= link_to 'ログアウト', root_path %>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
         </div>
       </div>
     </div>
