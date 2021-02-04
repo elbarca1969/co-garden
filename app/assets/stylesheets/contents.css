@@ -68,6 +68,14 @@ header {
   background-color: rgb(250, 250, 250);
 }
 
+.user-icon-menu-profile a {
+  display: block;
+  width: 100%;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .wrapper {
   background-color: #EFEFEF;
   height: 100vh;
