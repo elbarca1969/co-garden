@@ -1,0 +1,70 @@
+.account-page {
+  background-color: #EFEFEF;
+  height: 100vh;
+  overflow: scroll;
+  padding: 50px 0;
+}
+
+.account-page-upper {
+  width: 480px;
+  margin: 0 auto;
+  padding: 50px 35px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+.account-page-title {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.account-page-title > span {
+  color: #33b913;
+}
+
+.input {
+  width: 400px;
+  padding: 5px;
+  font-size: small;
+  background-color: #EFEFEF;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+.submit-btn {
+  width: 400px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.account-page-lower {
+  width: 480px;
+  margin: 20px auto 0;
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.account-page-lower-right a {
+  color: #0095f6;
+  font-weight: bold;
+}
