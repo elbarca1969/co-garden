@@ -10,4 +10,6 @@ class User < ApplicationRecord
   end
   validates :introduction, length: { maximum: 150 }
  
+  has_many :contents
+
 end
