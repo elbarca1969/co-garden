@@ -8,4 +8,13 @@ class ContentsController < ApplicationController
     @content = Content.new
   end
 
+  def create
+    @content = Content.new(content_params)
+    if @content.save
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
 end
