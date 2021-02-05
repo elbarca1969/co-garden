@@ -17,4 +17,10 @@ class ContentsController < ApplicationController
     end
   end
 
+  private
+
+  def content_params
+    params.require(:content).permit(:grade_id, :subject_id, :category, :question, :answer, :explanation, :release_id).merge(user_id: current_user.id)
+  end
+
 end
