@@ -7,4 +7,8 @@ class Subject < ActiveHash::Base
     { id: 5, name: '理　科' },
     { id: 6, name: '英　語' }
   ]
+
+  include ActiveHash::Associations
+  has_many :contents
+
 end

@@ -8,4 +8,8 @@ class Grade < ActiveHash::Base
     { id: 6, name: '高　２' },
     { id: 7, name: '高　３' }
   ]
+
+  include ActiveHash::Associations
+  has_many :contents
+
 end
