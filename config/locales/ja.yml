@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      content: コンテンツ
+    attributes:
+      content:
+        category: カテゴリー
+        question: 問　題
+        answer: 答　え
+        explanation: 解　説
