@@ -15,7 +15,6 @@ class Content < ApplicationRecord
     validates :category
     validates :question
     validates :answer
-    validates :explanation
   end
 
   extend ActiveHash::Associations::ActiveRecordExtensions
