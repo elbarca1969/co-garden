@@ -1,215 +1,46 @@
-<div class="main-content">
-  <div class="main-content-upper">
-    <div class="main-content-upper-nickname">
-      <%= link_to "ニックネーム", root_path %>
+<% @contents.each do |content| %>
+  <div class="main-content">
+    <div class="main-content-upper">
+      <div class="main-content-upper-nickname">
+        <%= link_to content.user.nickname, root_path %>
+      </div>
+      <div class="main-content-upper-username">
+        <%= link_to "@#{content.user.user_name}", root_path %>
+      </div>
+      <div class="main-content-upper-date">
+        <%= "•#{content.created_at}" %>
+      </div>
     </div>
-    <div class="main-content-upper-username">
-      <%= link_to "@user-name", root_path %>
+    <div class="main-content-center">
+      <div class="main-content-center-list main-content-center-release">
+        <% if content.release.id == 1 %>
+          <i class="fa fa-lock-open fa-fw"></i>
+        <% else %>
+          <i class="fa fa-lock fa-fw"></i>
+        <% end %>
+      </div>
+      <div class="main-content-center-list main-content-center-grade">
+        <%= content.grade.name %>
+      </div>
+      <div class="main-content-center-list main-content-center-subject">
+        <%= content.subject.name %>
+      </div>
+      <div class="main-content-center-list main-content-center-category">
+        <%= content.category %>
+      </div>
     </div>
-    <div class="main-content-upper-date">
-      •2021年2月1日
+    <div class="main-content-question">
+      <%= link_to root_path do %>
+        <%= content.question %>
+      <% end %>
     </div>
-  </div>
-  <div class="main-content-center">
-    <div class="main-content-center-list main-content-center-release">
-      <i class="fa fa-lock fa-fw"></i>
-    </div>
-    <div class="main-content-center-list main-content-center-grade">
-      学年
-    </div>
-    <div class="main-content-center-list main-content-center-subject">
-      教科
-    </div>
-    <div class="main-content-center-list main-content-center-category">
-      カテゴリー
-    </div>
-  </div>
-  <div class="main-content-question">
-    <%= link_to root_path do %>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-    <% end %>
-  </div>
-  <div class="main-content-lower">
-    <div class="main-content-lower-answer">
-      <i class="fa fa-check fa-fw"></i>未回答
-    </div>
-    <div class="main-content-lower-try">
-      <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
-    </div>
-  </div>
-</div>
-<div class="main-content">
-  <div class="main-content-upper">
-    <div class="main-content-upper-nickname">
-      <%= link_to "ニックネーム", root_path %>
-    </div>
-    <div class="main-content-upper-username">
-      <%= link_to "@user-name", root_path %>
-    </div>
-    <div class="main-content-upper-date">
-      •2021年2月1日
+    <div class="main-content-lower">
+      <div class="main-content-lower-answer">
+        <i class="fa fa-check fa-fw"></i>未回答
+      </div>
+      <div class="main-content-lower-try">
+        <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
+      </div>
     </div>
   </div>
-  <div class="main-content-center">
-    <div class="main-content-center-list main-content-center-release">
-      <i class="fa fa-lock fa-fw"></i>
-    </div>
-    <div class="main-content-center-list main-content-center-grade">
-      学年
-    </div>
-    <div class="main-content-center-list main-content-center-subject">
-      教科
-    </div>
-    <div class="main-content-center-list main-content-center-category">
-      カテゴリー
-    </div>
-  </div>
-  <div class="main-content-question">
-    <%= link_to root_path do %>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-    <% end %>
-  </div>
-  <div class="main-content-lower">
-    <div class="main-content-lower-answer">
-      <i class="fa fa-check fa-fw"></i>未回答
-    </div>
-    <div class="main-content-lower-try">
-      <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
-    </div>
-  </div>
-</div>
-<div class="main-content">
-  <div class="main-content-upper">
-    <div class="main-content-upper-nickname">
-      <%= link_to "ニックネーム", root_path %>
-    </div>
-    <div class="main-content-upper-username">
-      <%= link_to "@user-name", root_path %>
-    </div>
-    <div class="main-content-upper-date">
-      •2021年2月1日
-    </div>
-  </div>
-  <div class="main-content-center">
-    <div class="main-content-center-list main-content-center-release">
-      <i class="fa fa-lock fa-fw"></i>
-    </div>
-    <div class="main-content-center-list main-content-center-grade">
-      学年
-    </div>
-    <div class="main-content-center-list main-content-center-subject">
-      教科
-    </div>
-    <div class="main-content-center-list main-content-center-category">
-      カテゴリー
-    </div>
-  </div>
-  <div class="main-content-question">
-    <%= link_to root_path do %>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-    <% end %>
-  </div>
-  <div class="main-content-lower">
-    <div class="main-content-lower-answer">
-      <i class="fa fa-check fa-fw"></i>未回答
-    </div>
-    <div class="main-content-lower-try">
-      <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
-    </div>
-  </div>
-</div>
-<div class="main-content">
-  <div class="main-content-upper">
-    <div class="main-content-upper-nickname">
-      <%= link_to "ニックネーム", root_path %>
-    </div>
-    <div class="main-content-upper-username">
-      <%= link_to "@user-name", root_path %>
-    </div>
-    <div class="main-content-upper-date">
-      •2021年2月1日
-    </div>
-  </div>
-  <div class="main-content-center">
-    <div class="main-content-center-list main-content-center-release">
-      <i class="fa fa-lock fa-fw"></i>
-    </div>
-    <div class="main-content-center-list main-content-center-grade">
-      学年
-    </div>
-    <div class="main-content-center-list main-content-center-subject">
-      教科
-    </div>
-    <div class="main-content-center-list main-content-center-category">
-      カテゴリー
-    </div>
-  </div>
-  <div class="main-content-question">
-    <%= link_to root_path do %>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-    <% end %>
-  </div>
-  <div class="main-content-lower">
-    <div class="main-content-lower-answer">
-      <i class="fa fa-check fa-fw"></i>未回答
-    </div>
-    <div class="main-content-lower-try">
-      <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
-    </div>
-  </div>
-</div>
-<div class="main-content">
-  <div class="main-content-upper">
-    <div class="main-content-upper-nickname">
-      <%= link_to "ニックネーム", root_path %>
-    </div>
-    <div class="main-content-upper-username">
-      <%= link_to "@user-name", root_path %>
-    </div>
-    <div class="main-content-upper-date">
-      •2021年2月1日
-    </div>
-  </div>
-  <div class="main-content-center">
-    <div class="main-content-center-list main-content-center-release">
-      <i class="fa fa-lock fa-fw"></i>
-    </div>
-    <div class="main-content-center-list main-content-center-grade">
-      学年
-    </div>
-    <div class="main-content-center-list main-content-center-subject">
-      教科
-    </div>
-    <div class="main-content-center-list main-content-center-category">
-      カテゴリー
-    </div>
-  </div>
-  <div class="main-content-question">
-    <%= link_to root_path do %>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-      問題です<br>
-    <% end %>
-  </div>
-  <div class="main-content-lower">
-    <div class="main-content-lower-answer">
-      <i class="fa fa-check fa-fw"></i>未回答
-    </div>
-    <div class="main-content-lower-try">
-      <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
-    </div>
-  </div>
-</div>
+<% end %>

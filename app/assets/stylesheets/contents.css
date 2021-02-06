@@ -169,6 +169,12 @@ header {
 
 .main-content-center-list {
   margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  font-size: small;
+  padding: 3px 10px;
 }
 
 .main-content-question {
