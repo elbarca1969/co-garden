@@ -32,9 +32,6 @@
 | grade_id    | integer    | null: false                    |
 | subject_id  | integer    | null: false                    |
 | category    | string     | null: false                    |
-| question    | text       | null: false                    |
-| answer      | text       | null: false                    |
-| explanation | text       |                                |
 | release_id  | integer    | null: false                    |
 | user        | references | null: false, foreign_key: true | 
 
@@ -43,11 +40,13 @@
 - has_many :tries
 - has_many :answers
 - has_many :comments
-- has_many_attached: images
 - belongs_to :user
 - belongs_to_active_hash :grade
 - belongs_to_active_hash :subject
 - belongs_to_active_hash :release
+- has_rich_text :question
+- has_rich_text :answer
+- has_rich_text :explanation
 
 
 ## comments テーブル
