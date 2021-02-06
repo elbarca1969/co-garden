@@ -1,0 +1,42 @@
+<header>
+  <%= render "header" %>
+</header>
+<div class="content-form">
+  <%= form_with(model: @content, local: true) do |f| %>
+    <div class="content-form-container">
+      <%= render 'shared/error_messages', model: f.object %>
+      <div class="content-form-upper">
+        <div class="content-form-grade">
+          <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"select-box", id:"content-grade"}) %>
+        </div>
+        <div class="content-form-subject">
+          <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {class:"select-box", id:"content-subject"}) %>
+        </div>
+      </div>
+      <div class="content-form-category content-input">
+        <%= f.label :category %><span>※必須</span><br>
+        <%= f.text_field :category, class:"category-input" %>
+      </div>
+      <div class="content-form-question content-input">
+        <%= f.label :question %><span>※必須</span><br>
+        <%= f.rich_text_area :question, class:"content-input-area" %>
+      </div>
+      <div class="content-form-answer content-input">
+        <%= f.label :answer %><span>※必須</span><br>
+        <%= f.rich_text_area :answer, class:"content-input-area" %>
+      </div>
+      <div class="content-form-explanation content-input">
+        <%= f.label :explanation %><br>
+        <%= f.rich_text_area :explanation, class:"content-input-area" %>
+      </div>
+      <div class="content-form-lower">
+        <div class="content-form-release">
+          <%= f.collection_select(:release_id, Release.all, :id, :name, {}, {class:"select-box", id:"content-release"}) %>
+        </div>
+        <div class="content-form-actions">
+          <%= f.submit "送信する", class:"content-form-submit-btn" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
