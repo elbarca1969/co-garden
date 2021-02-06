@@ -17,3 +17,8 @@ ja:
       blank: を入力してください
       other_than: を選択してください
       required: を入力してください
+
+  time:
+    formats:
+      default: "%Y/%m/%d"
+      long: "%Y/%m/%d %H:%M"
