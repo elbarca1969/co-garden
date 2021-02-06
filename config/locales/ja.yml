@@ -8,3 +8,12 @@ ja:
         question: 問　題
         answer: 答　え
         explanation: 解　説
+        grade_id: 学　年
+        subject_id: 教　科
+
+  errors:
+    format: "%{attribute}%{message}"
+    messages:
+      blank: を入力してください
+      other_than: を選択してください
+      required: を入力してください

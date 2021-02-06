@@ -4,6 +4,7 @@
 <div class="content-form">
   <%= form_with(model: @content, local: true) do |f| %>
     <div class="content-form-container">
+      <%= render 'shared/error_messages', model: f.object %>
       <div class="content-form-upper">
         <div class="content-form-grade">
           <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"select-box", id:"content-grade"}) %>
