@@ -158,8 +158,11 @@ header {
 }
 
 .main-content-upper-nickname a {
-  font-size: large;
   font-weight: bold;
+}
+
+.main-content-upper-nickname a:hover {
+  text-decoration: underline;
 }
 
 .main-content-upper-username a,
