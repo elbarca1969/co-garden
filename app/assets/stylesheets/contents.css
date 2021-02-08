@@ -396,6 +396,10 @@ figure > img {
   border: 1px solid #00bdf6;
 }
 
+.content-show-answer-modal {
+  display: none;
+}
+
 .content-show-lower {
   display: flex;
   justify-content: space-around;
