@@ -341,6 +341,7 @@ header {
 }
 
 .content-show-upper-right-menu {
+  display: none;
   position: absolute;
   right: -10px;
   width: 100px;
