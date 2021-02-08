@@ -301,3 +301,109 @@ header {
   border: 1px solid #444;
   cursor: pointer;
 }
+
+/* コンテンツ詳細ページ */
+.content-show {
+  background-color: #EFEFEF;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.content-show-container {
+  width: 1024px;
+  margin: 70px auto 150px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.content-show-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-show-nickname a {
+  font-weight: bold;
+}
+
+.content-show-nickname a:hover {
+  text-decoration: underline;
+}
+
+.content-show-upper-right-icon {
+  color: #999;
+}
+
+.content-show-username a,
+.content-show-date {
+  color: #999;
+}
+
+.content-show-center {
+  display: flex;
+}
+
+.content-show-center-list {
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  font-size: small;
+  padding: 3px 10px;
+}
+
+.content-show-date {
+  text-align: right;
+}
+
+.content-show-main {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.content-show-main-title {
+  font-weight: bold;
+  background-color: #EFEFEF;
+  padding: 5px 15px;
+}
+
+.content-show-question,
+.content-show-answer,
+.content-show-explanation {
+  padding: 15px;
+}
+
+figure > img {
+  width: 300px;
+}
+
+.content-show-answer-open {
+  color: rgb(255, 255, 255);
+  background-color: #0095f6;
+  border: 1px solid #0095f6;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 10px 10px;
+}
+
+.content-show-answer-open:hover {
+  cursor: pointer;
+  background-color: #00bdf6;
+  border: 1px solid #00bdf6;
+}
+
+.content-show-lower {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-show-lower-answer,
+.content-show-lower-try {
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 3px;
+}

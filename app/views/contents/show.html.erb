@@ -1,1 +1,81 @@
-コンテンツ詳細ページ
+<header>
+  <%= render "header" %>
+</header>
+<div class="content-show">
+  <div class="content-show-container">
+    <div class="content-show-upper">
+      <div class="content-show-nickname">
+        <%= link_to @content.user.nickname, root_path %>
+      </div>
+      <div class="content-show-upper-right">
+        <% if current_user.id == @content.user_id %>
+          <div class="content-show-upper-right-icon">
+            <i class="fa fa-ellipsis-h fa-fw"></i>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="content-show-username">
+      <%= link_to "@#{@content.user.user_name}", root_path %>
+    </div>
+    <div class="content-show-center">
+      <div class="content-show-center-list content-show-release">
+        <% if @content.release.id == 1 %>
+          <i class="fa fa-lock-open fa-fw"></i>
+        <% else %>
+          <i class="fa fa-lock fa-fw"></i>
+        <% end %>
+      </div>
+      <div class="content-show-center-list content-show-grade">
+        <%= @content.grade.name %>
+      </div>
+      <div class="content-show-center-list content-show-subject">
+        <%= @content.subject.name %>
+      </div>
+      <div class="content-show-center-list content-show-category">
+        <%= @content.category %>
+      </div>
+    </div>
+    <div class="content-show-date">
+        <%= l @content.created_at, format: :long %>
+    </div>
+    <div class="content-show-main">
+      <div class="content-show-main-title">
+        問　題
+      </div>
+      <div class="content-show-question">
+        <%= @content.question %>
+      </div>
+      <div class="content-show-answer-open">
+        答えを見る
+      </div>
+      <div class="content-show-answer-modal">
+        <div class="content-show-main-title">
+          答　え
+        </div>
+        <div class="content-show-answer">
+          <%= @content.answer %>
+        </div>
+        <div class="content-show-main-title">
+          解　説
+        </div>
+        <div class="content-show-explanation">
+          <%= @content.explanation %>
+        </div>
+      </div>
+    </div>
+    <div class="content-show-lower">
+      <div class="content-show-lower-answer">
+        <i class="fa fa-check fa-fw"></i>未回答
+      </div>
+      <div class="content-show-lower-try">
+        <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contents-post-icon">
+  <%= link_to new_content_path do %>
+    <i class="fa fa-pencil-alt fa-fw"></i>
+  <% end %>
+</div>
