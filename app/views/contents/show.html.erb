@@ -11,6 +11,18 @@
         <% if current_user.id == @content.user_id %>
           <div class="content-show-upper-right-icon">
             <i class="fa fa-ellipsis-h fa-fw"></i>
+            <div class="content-show-upper-right-menu">
+              <div class="content-show-edit-btn">
+                <%= link_to root_path do %>
+                  <i class="fa fa-wrench fa-fw"></i>&nbsp;&nbsp;編集する
+                <% end %>
+              </div>
+              <div class="content-show-delete-btn">
+                <%= link_to root_path do %>
+                  <i class="fa fa-trash-alt fa-fw"></i>&nbsp;&nbsp;削除する
+                <% end %>
+              </div>
+            </div>
           </div>
         <% end %>
       </div>

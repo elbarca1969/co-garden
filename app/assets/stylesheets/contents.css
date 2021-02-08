@@ -333,6 +333,37 @@ header {
 
 .content-show-upper-right-icon {
   color: #999;
+  position: relative;
+}
+
+.content-show-upper-right-icon:hover {
+  cursor: pointer;
+}
+
+.content-show-upper-right-menu {
+  position: absolute;
+  right: -10px;
+  width: 100px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.content-show-upper-right-menu a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: small;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.content-show-upper-right-menu a:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.content-show-delete-btn a {
+  color: red;
 }
 
 .content-show-username a,
