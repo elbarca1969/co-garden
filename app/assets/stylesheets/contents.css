@@ -35,21 +35,31 @@ header {
   border-radius: 50px;
 }
 
-.header-right-menu a:hover {
+.header-right-menu a:hover,
+.user-icon:hover {
   background-color: #333;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .user-icon {
+  border: 1px solid #333;
+  border-radius: 50px;
+  margin-top: 11px;
+  height: 38px;
+  line-height: 35px;
+  padding: 0 8px;
   position: relative;
 }
 
 .user-icon-menu {
   display: none;
   position: absolute;
+  top: 45px;
   right: -30px;
   width: 200px;
   background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
   border-radius: 5px;
 }
 
@@ -158,8 +168,11 @@ header {
 }
 
 .main-content-upper-nickname a {
-  font-size: large;
   font-weight: bold;
+}
+
+.main-content-upper-nickname a:hover {
+  text-decoration: underline;
 }
 
 .main-content-upper-username a,
@@ -300,4 +313,146 @@ header {
   background-color: #444;
   border: 1px solid #444;
   cursor: pointer;
+}
+
+/* コンテンツ詳細ページ */
+.content-show {
+  background-color: #EFEFEF;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.content-show-container {
+  width: 1024px;
+  margin: 70px auto 150px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.content-show-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-show-nickname a {
+  font-weight: bold;
+}
+
+.content-show-nickname a:hover {
+  text-decoration: underline;
+}
+
+.content-show-upper-right-icon {
+  color: #999;
+  position: relative;
+}
+
+.content-show-upper-right-icon:hover {
+  cursor: pointer;
+}
+
+.content-show-upper-right-menu {
+  display: none;
+  position: absolute;
+  right: -10px;
+  width: 100px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.content-show-upper-right-menu a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: small;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.content-show-upper-right-menu a:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.content-show-delete-btn a {
+  color: red;
+}
+
+.content-show-username a,
+.content-show-date {
+  color: #999;
+}
+
+.content-show-center {
+  display: flex;
+}
+
+.content-show-center-list {
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  font-size: small;
+  padding: 3px 10px;
+}
+
+.content-show-date {
+  text-align: right;
+}
+
+.content-show-main {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.content-show-main-title {
+  font-weight: bold;
+  background-color: #EFEFEF;
+  padding: 5px 15px;
+}
+
+.content-show-question,
+.content-show-answer,
+.content-show-explanation {
+  padding: 15px;
+}
+
+figure > img {
+  width: 300px;
+}
+
+.content-show-answer-open {
+  color: rgb(255, 255, 255);
+  background-color: #0095f6;
+  border: 1px solid #0095f6;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 10px 10px;
+}
+
+.content-show-answer-open:hover {
+  cursor: pointer;
+  background-color: #00bdf6;
+  border: 1px solid #00bdf6;
+}
+
+.content-show-answer-modal {
+  display: none;
+}
+
+.content-show-lower {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-show-lower-answer,
+.content-show-lower-try {
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 3px;
 }

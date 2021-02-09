@@ -2,7 +2,7 @@ class ContentsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @contents = current_user.contents.order("created_at DESC")
+    @contents = current_user.contents.order("created_at DESC").includes([:rich_text_question])
   end
 
   def new
@@ -16,6 +16,10 @@ class ContentsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @content = Content.find(params[:id])
   end
 
   private
