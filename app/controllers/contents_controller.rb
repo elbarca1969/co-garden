@@ -1,5 +1,6 @@
 class ContentsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_content, only: [:show, :edit]
 
   def index
     @contents = current_user.contents.order("created_at DESC").includes([:rich_text_question])
@@ -19,17 +20,19 @@ class ContentsController < ApplicationController
   end
 
   def show
-    @content = Content.find(params[:id])
   end
 
   def edit
-    @content = Content.find(params[:id])
   end
 
   private
 
   def content_params
     params.require(:content).permit(:grade_id, :subject_id, :category, :question, :answer, :explanation, :release_id).merge(user_id: current_user.id)
+  end
+
+  def set_content
+    @content = Content.find(params[:id])
   end
 
 end
