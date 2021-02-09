@@ -1,6 +1,6 @@
 class ContentsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_content, only: [:show, :edit]
+  before_action :set_content, only: [:show, :edit, :update]
 
   def index
     @contents = current_user.contents.order("created_at DESC").includes([:rich_text_question])
@@ -23,6 +23,14 @@ class ContentsController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
+    if @content.update(content_params)
+      redirect_to content_path(@content)
+    else
+      render :edit
+    end
   end
 
   private
