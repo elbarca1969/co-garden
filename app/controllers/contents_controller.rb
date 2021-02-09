@@ -20,6 +20,9 @@ class ContentsController < ApplicationController
   end
 
   def show
+    if current_user.id != @content.user_id && @content.release_id == 2
+      redirect_to root_path
+    end
   end
 
   def edit
