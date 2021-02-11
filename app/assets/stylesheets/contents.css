@@ -317,12 +317,6 @@ header {
 
 /* コンテンツ詳細ページ */
 .content-show {
-  background-color: #EFEFEF;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.content-show-container {
   width: 1024px;
   margin: 70px auto 150px;
   background-color: rgb(250, 250, 250);
