@@ -60,7 +60,7 @@ header {
   width: 200px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(219, 219, 219);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .user-icon-menu a {
@@ -69,7 +69,7 @@ header {
   line-height: 40px;
   font-size: small;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 0%;
   padding: 0 10px;
 }
@@ -240,12 +240,6 @@ header {
 
 /* コンテンツ投稿ページ */
 .content-form {
-  background-color: #EFEFEF;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.content-form-container {
   width: 1024px;
   margin: 70px auto;
   background-color: rgb(250, 250, 250);
@@ -317,12 +311,6 @@ header {
 
 /* コンテンツ詳細ページ */
 .content-show {
-  background-color: #EFEFEF;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.content-show-container {
   width: 1024px;
   margin: 70px auto 150px;
   background-color: rgb(250, 250, 250);
@@ -360,7 +348,7 @@ header {
   width: 100px;
   border: 1px solid rgb(219, 219, 219);
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .content-show-upper-right-menu a {
@@ -368,7 +356,7 @@ header {
   height: 40px;
   line-height: 40px;
   font-size: small;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 0 10px;
 }
 
@@ -376,9 +364,86 @@ header {
   background-color: rgb(250, 250, 250);
 }
 
-.content-show-delete-btn a {
+/* コンテンツ削除ボタン */
+.content-delete-open {
+  color: red;
+  height: 40px;
+  line-height: 40px;
+  font-size: small;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.content-delete-open:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.content-delete-modal {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.content-delete-container {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.content-delete-sentence {
+  padding: 50px 0;
+  font-weight: bold;
+}
+
+.content-delete-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-delete-cancel {
+  font-size: smaller;
+  padding: 5px 20px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+.content-delete-cancel:hover {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.content-delete-action a {
+  display: block;
+  font-size: smaller;
+  padding: 5px 20px;
+  border: 1px solid red;
+  border-radius: 3px;
   color: red;
 }
+
+.content-delete-action a:hover {
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+/* コンテンツ削除ボタン */
 
 .content-show-username a,
 .content-show-date {

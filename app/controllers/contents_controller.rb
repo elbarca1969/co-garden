@@ -1,6 +1,6 @@
 class ContentsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_content, only: [:show, :edit, :update]
+  before_action :set_content, only: [:show, :edit, :update, :destroy]
 
   def index
     @contents = current_user.contents.order("created_at DESC").includes([:rich_text_question])
@@ -36,6 +36,15 @@ class ContentsController < ApplicationController
       redirect_to content_path(@content)
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if current_user.id == @content.user_id
+      @content.destroy
+      redirect_to root_path
+    else
+      render :index
     end
   end
 

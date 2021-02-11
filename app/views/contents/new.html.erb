@@ -1,9 +1,9 @@
 <header>
   <%= render "header" %>
 </header>
-<div class="content-form">
+<div class="wrapper">
   <%= form_with(model: @content, local: true) do |f| %>
-    <div class="content-form-container">
+    <div class="content-form">
       <%= render 'shared/error_messages', model: f.object %>
       <div class="content-form-upper">
         <div class="content-form-grade">
