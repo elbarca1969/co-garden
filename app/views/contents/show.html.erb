@@ -26,7 +26,21 @@
       </div>
     </div>
     <div class="content-delete-modal">
-      本当に削除しますか？
+      <div class="content-delete-container">
+        <div class="content-delete-sentence">
+          本当に削除しますか？
+        </div>
+        <div class="content-delete-btn">
+          <div class="content-delete-cancel">
+            キャンセル
+          </div>
+          <div class="content-delete-action">
+            <%= link_to content_path(@content), method: :delete do %>
+              <i class="fa fa-trash-alt fa-fw"></i>&nbsp;&nbsp;削除する
+            <% end %>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="content-show-username">
       <%= link_to "@#{@content.user.user_name}", root_path %>
