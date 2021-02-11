@@ -389,6 +389,10 @@ header {
 .content-delete-open:hover {
   background-color: rgb(250, 250, 250);
 }
+
+.content-delete-modal {
+  display: none;
+}
 /* コンテンツ削除ボタン */
 
 .content-show-username a,
