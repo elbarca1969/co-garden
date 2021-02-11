@@ -240,12 +240,6 @@ header {
 
 /* コンテンツ投稿ページ */
 .content-form {
-  background-color: #EFEFEF;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.content-form-container {
   width: 1024px;
   margin: 70px auto;
   background-color: rgb(250, 250, 250);
