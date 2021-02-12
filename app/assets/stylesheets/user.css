@@ -69,3 +69,54 @@
   color: #0095f6;
   font-weight: bold;
 }
+
+/* ユーザー詳細ページ */
+.user-show {
+  width: 1024px;
+  margin: 70px auto 150px;
+}
+
+.user-show-container {
+  width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.user-show-upper {
+  display: flex;
+}
+
+.user-show-nickname {
+  font-size: large;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.user-edit-btn a {
+  display: block;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px 10px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+.user-show-introduction,
+.user-show-lower {
+  padding: 10px 0;
+}
+
+.user-show-center,
+.user-show-lower {
+  display: flex;
+}
+
+.user-show-prefecture,
+.user-show-content-count,
+.user-show-following {
+  margin-right: 30px;
+}
+
+.user-show-follow {
+  display: flex;
+}
