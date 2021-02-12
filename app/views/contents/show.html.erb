@@ -5,7 +5,7 @@
   <div class="content-show">
     <div class="content-show-upper">
       <div class="content-show-nickname">
-        <%= link_to @content.user.nickname, root_path %>
+        <%= link_to @content.user.nickname, user_path(@content.user) %>
       </div>
       <div class="content-show-upper-right">
         <% if current_user.id == @content.user_id %>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="content-show-username">
-      <%= link_to "@#{@content.user.user_name}", root_path %>
+      <%= link_to "@#{@content.user.user_name}", user_path(@content.user) %>
     </div>
     <div class="content-show-center">
       <div class="content-show-center-list content-show-release">
