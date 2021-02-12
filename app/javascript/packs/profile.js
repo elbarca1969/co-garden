@@ -5,11 +5,11 @@ $(function(){
     if(menu.hasClass("show")){
       menu.removeClass("show");
       menu.hide(50);
-      profileIcon.css("color", "black").css("background-color", "rgb(255, 255, 255)")
+      profileIcon.css("color", "black").css("background-color", "#FFFFFF")
     } else {
       menu.addClass("show");
       menu.slideDown(50);
-      profileIcon.css("color", "rgb(255, 255, 255)").css("background-color", "#333")
+      profileIcon.css("color", "#FFFFFF").css("background-color", "#333")
     }
   });
 });
