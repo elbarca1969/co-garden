@@ -1,44 +1,46 @@
-<div class="main-content">
-  <div class="main-content-upper">
-    <div class="main-content-upper-nickname">
-      <%= link_to content.user.nickname, user_path(content.user) %>
+<% if current_user.id == content.user_id || content.release_id == 1%>
+  <div class="main-content">
+    <div class="main-content-upper">
+      <div class="main-content-upper-nickname">
+        <%= link_to content.user.nickname, user_path(content.user) %>
+      </div>
+      <div class="main-content-upper-username">
+        <%= link_to "@#{content.user.user_name}", user_path(content.user) %>
+      </div>
+      <div class="main-content-upper-date">
+        <%= "•#{content_time(content.created_at)}" %>
+      </div>
     </div>
-    <div class="main-content-upper-username">
-      <%= link_to "@#{content.user.user_name}", user_path(content.user) %>
+    <div class="main-content-center">
+      <div class="main-content-center-list main-content-center-release">
+        <% if content.release.id == 1 %>
+          <i class="fa fa-lock-open fa-fw"></i>
+        <% else %>
+          <i class="fa fa-lock fa-fw"></i>
+        <% end %>
+      </div>
+      <div class="main-content-center-list main-content-center-grade">
+        <%= content.grade.name %>
+      </div>
+      <div class="main-content-center-list main-content-center-subject">
+        <%= content.subject.name %>
+      </div>
+      <div class="main-content-center-list main-content-center-category">
+        <%= content.category %>
+      </div>
     </div>
-    <div class="main-content-upper-date">
-      <%= "•#{content_time(content.created_at)}" %>
-    </div>
-  </div>
-  <div class="main-content-center">
-    <div class="main-content-center-list main-content-center-release">
-      <% if content.release.id == 1 %>
-        <i class="fa fa-lock-open fa-fw"></i>
-      <% else %>
-        <i class="fa fa-lock fa-fw"></i>
+    <div class="main-content-question">
+      <%= link_to content_path(content) do %>
+        <%= content.question %>
       <% end %>
     </div>
-    <div class="main-content-center-list main-content-center-grade">
-      <%= content.grade.name %>
-    </div>
-    <div class="main-content-center-list main-content-center-subject">
-      <%= content.subject.name %>
-    </div>
-    <div class="main-content-center-list main-content-center-category">
-      <%= content.category %>
-    </div>
-  </div>
-  <div class="main-content-question">
-    <%= link_to content_path(content) do %>
-      <%= content.question %>
-    <% end %>
-  </div>
-  <div class="main-content-lower">
-    <div class="main-content-lower-answer">
-      <i class="fa fa-check fa-fw"></i>未回答
-    </div>
-    <div class="main-content-lower-try">
-      <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
+    <div class="main-content-lower">
+      <div class="main-content-lower-answer">
+        <i class="fa fa-check fa-fw"></i>未回答
+      </div>
+      <div class="main-content-lower-try">
+        <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
+      </div>
     </div>
   </div>
-</div>
+<% end %>
