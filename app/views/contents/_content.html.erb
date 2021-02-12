@@ -1,11 +1,11 @@
-<% @contents.each do |content| %>
+<% if current_user.id == content.user_id || content.release_id == 1%>
   <div class="main-content">
     <div class="main-content-upper">
       <div class="main-content-upper-nickname">
-        <%= link_to content.user.nickname, root_path %>
+        <%= link_to content.user.nickname, user_path(content.user) %>
       </div>
       <div class="main-content-upper-username">
-        <%= link_to "@#{content.user.user_name}", root_path %>
+        <%= link_to "@#{content.user.user_name}", user_path(content.user) %>
       </div>
       <div class="main-content-upper-date">
         <%= "•#{content_time(content.created_at)}" %>

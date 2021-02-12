@@ -1,0 +1,71 @@
+<header>
+  <%= render "contents/header" %>
+</header>
+<div class="wrapper">
+  <div class="user-show">
+    <div class="user-show-container">
+      <div class="user-show-upper">
+        <div class="user-show-nickname">
+          <%= @user.nickname %>
+        </div>
+        <div class="user-show-upper-right">
+          <% if current_user.id == @user.id %>
+            <div class="user-edit-btn">
+              <%= link_to "プロフィールを編集", root_path %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="user-show-username">
+        <%= "@#{@user.user_name}" %>
+      </div>
+      <div class="user-show-introduction">
+        <%= @user.introduction %>
+      </div>
+      <div class="user-show-center">
+        <div class="user-show-prefecture">
+          <% if @user.prefecture_id.present? && @user.prefecture_id != 1 %>
+            <%= "住まい >> #{@user.prefecture.name}" %>
+          <% end %>
+        </div>
+        <div class="user-show-birthday">
+          <% if @user.birthday.present? %>
+            <%= "生年月日 >> #{@user.birthday}" %>
+          <% end %>
+        </div>
+      </div>
+      <div class="user-show-lower">
+        <div class="user-show-content-count">
+          <%= "コンテンツ#{@user.contents.length}件" %>
+        </div>
+        <div class="user-show-follow">
+          <div class="user-show-following">
+            フォロー中◯人
+          </div>
+          <div class="user-show-follower">
+            フォロワー◯人
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-search">
+      <div class="main-search-container">
+        <div class="main-search-grade">
+          学年
+        </div>
+        <div class="main-search-subject">
+          教科
+        </div>
+        <div class="main-search-category">
+          カテゴリー
+        </div>
+      </div>
+    </div>
+    <div class="user-show-contents">
+      <%= render partial: "contents/content", collection: @contents %>
+    </div>
+  </div>
+</div>
+<div class="post">
+  <%= render "contents/post" %>
+</div>

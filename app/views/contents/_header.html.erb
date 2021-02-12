@@ -29,7 +29,7 @@
       <i class="fa fa-user fa-fw"></i>
       <div class="user-icon-menu">
         <div class="user-icon-menu-profile">
-          <%= link_to current_user.nickname, root_path %>
+          <%= link_to current_user.nickname, user_path(current_user) %>
         </div>
         <div class="user-icon-menu-logout">
           <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>

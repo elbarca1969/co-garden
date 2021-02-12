@@ -1,6 +1,6 @@
 /* 新規登録・ログインページ */
 .account-page {
-  background-color: #EFEFEF;
+  background-color: #FAFAFA;
   height: 100vh;
   overflow: scroll;
   padding: 50px 0;
@@ -10,7 +10,7 @@
   width: 480px;
   margin: 0 auto;
   padding: 50px 35px;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFFFFF;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
 }
@@ -29,7 +29,7 @@
   width: 400px;
   padding: 5px;
   font-size: small;
-  background-color: #EFEFEF;
+  background-color: #FAFAFA;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
 }
@@ -42,7 +42,7 @@
   width: 400px;
   padding: 5px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   background-color: #333;
   border: 1px solid #333;
   border-radius: 3px;
@@ -58,7 +58,7 @@
   width: 480px;
   margin: 20px auto 0;
   padding: 20px 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFFFFF;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
   display: flex;
@@ -68,4 +68,55 @@
 .account-page-lower-right a {
   color: #0095f6;
   font-weight: bold;
+}
+
+/* ユーザー詳細ページ */
+.user-show {
+  width: 1024px;
+  margin: 70px auto 150px;
+}
+
+.user-show-container {
+  width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.user-show-upper {
+  display: flex;
+}
+
+.user-show-nickname {
+  font-size: large;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.user-edit-btn a {
+  display: block;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px 10px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+.user-show-introduction,
+.user-show-lower {
+  padding: 10px 0;
+}
+
+.user-show-center,
+.user-show-lower {
+  display: flex;
+}
+
+.user-show-prefecture,
+.user-show-content-count,
+.user-show-following {
+  margin-right: 30px;
+}
+
+.user-show-follow {
+  display: flex;
 }
