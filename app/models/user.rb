@@ -9,7 +9,10 @@ class User < ApplicationRecord
     validates :user_name, uniqueness: true, format: { with: /\A[a-zA-Z0-9]+\z/ }
   end
   validates :introduction, length: { maximum: 150 }
- 
+
   has_many :contents
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :prefecture
 
 end
