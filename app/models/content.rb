@@ -18,6 +18,10 @@ class Content < ApplicationRecord
     validates :answer
   end
 
+  def answer_user(user_id)
+    answers.find_by(user_id: user_id)
+  end
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :grade
   belongs_to :subject
