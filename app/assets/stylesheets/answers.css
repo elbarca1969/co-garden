@@ -1,0 +1,23 @@
+/* 回答済・未回答ボタン */
+.answer {
+  display: flex;
+}
+
+.answer-icon {
+  color: #FFFFFF;
+  background-color: #00CED1;
+  border: 1px solid #00CED1;
+  padding: 2px 4px;
+  border-radius: 50px;
+}
+
+.no-answer-icon {
+  color: #00CED1;
+  border: 1px solid #00CED1;
+  padding: 2px 4px;
+  border-radius: 50px;
+}
+
+.answer-text {
+  padding: 2px;
+}
