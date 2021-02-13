@@ -156,3 +156,17 @@
 #user-prefecture {
   width: 100px;
 }
+
+#text-alert {
+  display: none;
+  width: 400px;
+  padding: 5px;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  margin-top: -15px;
+}
