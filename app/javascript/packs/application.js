@@ -13,6 +13,7 @@ require('./profile')
 require('./answer')
 require('./contentMenu.js')
 require('./contentDelete.js')
+require('./introductionCount.js')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

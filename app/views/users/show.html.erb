@@ -11,7 +11,7 @@
         <div class="user-show-upper-right">
           <% if current_user.id == @user.id %>
             <div class="user-edit-btn">
-              <%= link_to "プロフィールを編集", root_path %>
+              <%= link_to "プロフィールを編集", edit_user_path(current_user) %>
             </div>
           <% end %>
         </div>
@@ -25,12 +25,12 @@
       <div class="user-show-center">
         <div class="user-show-prefecture">
           <% if @user.prefecture_id.present? && @user.prefecture_id != 1 %>
-            <%= "住まい >> #{@user.prefecture.name}" %>
+            <%= "住まい >> #{@user.prefecture.name}　　" %>
           <% end %>
         </div>
         <div class="user-show-birthday">
           <% if @user.birthday.present? %>
-            <%= "生年月日 >> #{@user.birthday}" %>
+            <%= "生年月日 >> #{@user.birthday.year}年#{@user.birthday.month}月#{@user.birthday.day}日" %>
           <% end %>
         </div>
       </div>

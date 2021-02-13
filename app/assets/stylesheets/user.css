@@ -111,7 +111,6 @@
   display: flex;
 }
 
-.user-show-prefecture,
 .user-show-content-count,
 .user-show-following {
   margin-right: 30px;
@@ -119,4 +118,55 @@
 
 .user-show-follow {
   display: flex;
+}
+
+/* ユーザー編集ページ */
+.user-edit {
+  width: 480px;
+  margin: 70px auto;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  padding: 15px 35px;
+}
+
+.user-edit-field {
+  margin: 10px 0;
+}
+
+.input-area {
+  width: 400px;
+  height: 70px;
+  padding: 5px;
+  font-size: small;
+  background-color: #FAFAFA;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+#user-prefecture,
+.birthday-input > select {
+  font-size: small;
+  padding: 5px;
+  background-color: #FAFAFA;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+}
+
+#user-prefecture {
+  width: 100px;
+}
+
+#text-alert {
+  display: none;
+  width: 400px;
+  padding: 5px;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  margin-top: -15px;
 }
