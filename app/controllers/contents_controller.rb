@@ -3,7 +3,7 @@ class ContentsController < ApplicationController
   before_action :set_content, only: [:show, :edit, :update, :destroy]
 
   def index
-    @contents = current_user.contents.order("created_at DESC").includes([:rich_text_question])
+    @contents = current_user.contents.order("created_at DESC").includes([:rich_text_question], :answers)
   end
 
   def new
