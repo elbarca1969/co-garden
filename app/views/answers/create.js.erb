@@ -1,0 +1,1 @@
+$("#answers-button<%= @content.id %>").html("<%= j(render partial: "answers/answer", locals: { content: @content, answer: @answer })%>");
