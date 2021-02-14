@@ -93,7 +93,9 @@
     </div>
     <div class="content-show-lower">
       <div class="content-show-lower-answer">
-        <i class="fa fa-check fa-fw"></i>未回答
+        <div id="answers-button<%= @content.id %>">
+          <%= render partial: "answers/answer", locals: { content: @content, answer: @answer } %>
+        </div>
       </div>
       <div class="content-show-lower-try">
         <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)

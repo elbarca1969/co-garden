@@ -11,6 +11,7 @@ class User < ApplicationRecord
   validates :introduction, length: { maximum: 150 }
 
   has_many :contents
+  has_many :answers, dependent: :destroy
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture

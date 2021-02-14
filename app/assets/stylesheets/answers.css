@@ -1,0 +1,50 @@
+/* 回答済・未回答ボタン */
+.answer {
+  display: flex;
+}
+
+.answer-icon {
+  color: #FFFFFF;
+  background-color: #00CED1;
+  border: 1px solid #00CED1;
+  padding: 2px 4px;
+  border-radius: 50px;
+}
+
+.no-answer-icon {
+  color: #00CED1;
+  border: 1px solid #00CED1;
+  padding: 2px 4px;
+  border-radius: 50px;
+}
+
+.answer-text {
+  padding: 2px;
+}
+
+/* 回答済・未回答ボタンのホバー時 */
+.answer-text-hover {
+  display: none;
+  padding: 2px;
+}
+
+.answer:hover .answer-text {
+  display: none;
+}
+
+.answer:hover .answer-text-hover {
+  display: block;
+  cursor: pointer;
+}
+
+.answer:hover .answer-icon {
+  color: #00CED1;
+  background-color: #FFFFFF;
+  border: 1px solid #00CED1;
+}
+
+.answer:hover .no-answer-icon {
+  color: #FFFFFF;
+  background-color: #00CED1;
+  border: 1px solid #00CED1;
+}
