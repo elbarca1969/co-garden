@@ -24,7 +24,13 @@
       </label>
     </div>
   </div>
+  <% if @contents.present? %>
+    <div class="main-contents">
+      <%= render partial: "content", collection: @contents %>
+    </div>
+  <% else %>
+    <div class="content-empty-message">
+      一致するコンテンツがありません。
+    </div>
+  <% end %>
 <% end %>
-<div class="main-contents">
-  <%= render partial: "content", collection: @contents %>
-</div>
