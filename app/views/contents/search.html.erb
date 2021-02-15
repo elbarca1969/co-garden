@@ -1,1 +1,48 @@
-検索ページ
+<header>
+  <%= render "header" %>
+</header>
+<div class="wrapper">
+  <div class="search">
+    <div class="search-header">
+      <div class="search-header-left">
+        コンテンツ
+      </div>
+      <div class="search-header-right">
+        ユーザー
+      </div>
+    </div>
+    <div class="contents-search">
+      <%= search_form_for @q, url: search_contents_path do |f| %>
+        <div class="main-search">
+          <div class="main-search-container">
+            <div class="main-search-grade">
+              <%= f.collection_select :grade_id_eq, Grade.where.not(id: 1), :id, :name, include_blank: "学　年" %>
+            </div>
+            <div class="main-search-subject">
+              <%= f.collection_select :subject_id_eq, Subject.where.not(id: 1), :id, :name, include_blank: "教　科" %>
+            </div>
+            <div class="main-search-category">
+              <%= f.search_field :category_cont, placeholder: "カテゴリーを入力", class: "search-textarea" %>
+            </div>
+            <label class="main-search-btn">
+              <i class="fa fa-search fa-fw"></i>
+              <%= f.submit class: "hidden" %>
+            </label>
+          </div>
+        </div>
+        <% if @contents.present? %>
+          <div class="search-contents">
+            <%= render partial: "content", collection: @contents %>
+          </div>
+        <% else %>
+          <div class="content-empty-message">
+            一致するコンテンツがありません。
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="post">
+  <%= render "post" %>
+</div>

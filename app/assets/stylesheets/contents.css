@@ -544,3 +544,37 @@ figure > img {
   border: 1px solid #333;
   border-radius: 3px;
 }
+
+/* 検索ページ */
+.search {
+  width: 1024px;
+  margin: 70px auto 150px;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.search-header-left {
+  margin-right: 30px;
+}
+
+.search-header-left,
+.search-header-right {
+  width: 300px;
+  padding: 10px 0;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.search-header-left:hover,
+.search-header-right:hover {
+  background-color: #333;
+  color: #FFFFFF;
+  cursor: pointer;
+}
