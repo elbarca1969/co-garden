@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
 
   def show
-    @contents = @user.contents.order("created_at DESC").includes([:rich_text_question], :answers)
+    @q = @user.contents.ransack(params[:q])
+    @contents = @q.result.order("created_at DESC").includes([:rich_text_question], :answers)
   end
 
   def edit
