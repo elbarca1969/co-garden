@@ -127,7 +127,7 @@ header {
   color: #FFFFFF;
 }
 
-/* トップページ検索窓 */
+/* 検索窓 */
 .main-search {
   width: 630px;
   margin: 0 auto;
@@ -138,20 +138,40 @@ header {
 
 .main-search-container {
   display: flex;
-  justify-content: center;
 }
 
-.main-search-grade,
-.main-search-subject,
-.main-search-category {
+.main-search-grade > select,
+.main-search-subject > select,
+.search-textarea {
+  height: 30px;
+  font-size: small;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
-  padding: 5px 20px;
-  margin-right: 10px;
+  padding: 0 10px;
+  margin-right: 5px;
 }
 
-.main-search-category {
+.search-textarea {
   width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-search-btn {
+  height: 30px;
+  padding: 2px 5px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  color: #FFFFFF;
+  background-color: #333;
+}
+
+.main-search-btn:hover {
+  background-color: #555;
+  border: 1px solid #555;
+  cursor: pointer;
 }
 
 /* コンテンツ部分 */
