@@ -49,6 +49,9 @@ class ContentsController < ApplicationController
     end
   end
 
+  def search
+  end
+
   private
 
   def content_params
