@@ -66,10 +66,16 @@
           </label>
         </div>
       </div>
+      <% if @contents.present? %>
+        <div class="user-show-contents">
+          <%= render partial: "contents/content", collection: @contents %>
+        </div>
+      <% else %>
+        <div class="content-empty-message">
+          一致するコンテンツがありません。
+        </div>
+      <% end %>
     <% end %>
-    <div class="user-show-contents">
-      <%= render partial: "contents/content", collection: @contents %>
-    </div>
   </div>
 </div>
 <div class="post">
