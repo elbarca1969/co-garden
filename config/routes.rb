@@ -7,5 +7,9 @@ Rails.application.routes.draw do
     end
     resources :answers, only: [:create, :destroy]
   end
-  resources :users, only: [:show, :edit, :update]
+  resources :users, only: [:show, :edit, :update] do
+    collection do
+      get :search
+    end
+  end
 end
