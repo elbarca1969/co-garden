@@ -181,3 +181,57 @@
   padding: 0 10px;
   margin-right: 5px;
 }
+
+.user-empty-message {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* ユーザーリスト */
+.user-list {
+  width: 630px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.user-list-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-list-upper-left {
+  width: 500px;
+}
+
+.user-list-nickname {
+  font-weight: bold;
+}
+
+.user-list-nickname:hover {
+  text-decoration: underline;
+}
+
+.user-list-username,
+.user-list-introduction {
+  font-size: small;
+}
+
+.user-list-username {
+  color: #999;
+}
+
+.user-list-upper-right a {
+  display: block;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.user-list-introduction {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
