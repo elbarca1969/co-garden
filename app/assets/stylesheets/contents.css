@@ -545,7 +545,7 @@ figure > img {
   border-radius: 3px;
 }
 
-/* 検索ページ */
+/* コンテンツ検索ページ */
 .search {
   width: 1024px;
   margin: 70px auto 150px;
@@ -561,8 +561,9 @@ figure > img {
   margin-right: 30px;
 }
 
-.search-header-left,
-.search-header-right {
+.search-header-left a,
+.search-header-right a {
+  display: block;
   width: 300px;
   padding: 10px 0;
   background-color: #FFFFFF;
@@ -572,8 +573,8 @@ figure > img {
   font-weight: bold;
 }
 
-.search-header-left:hover,
-.search-header-right:hover {
+.search-header-left a:hover,
+.search-header-right a:hover {
   background-color: #333;
   color: #FFFFFF;
   cursor: pointer;
