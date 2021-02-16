@@ -21,6 +21,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+    @q = User.ransack(params[:q])
+    @users = @q.result
+  end
+
   private
 
   def set_user
