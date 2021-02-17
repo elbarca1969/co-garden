@@ -4,6 +4,7 @@
       <%= hidden_field_tag :follow_id, user.id %>
       <div class="following-button">
         <%= f.submit 'フォロー中', class: 'follow-btn following-btn' %>
+        <%= f.submit 'フォローを解除', class: 'follow-btn following-btn-hover' %>
       </div>
     <% end %>
   <% else %>

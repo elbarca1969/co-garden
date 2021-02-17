@@ -23,3 +23,18 @@
   background-color: #FFFFFF;
   color: #0095f6;
 }
+
+.following-btn-hover {
+  display: none;
+  background-color: red;
+  color: #FFFFFF;
+  border: 1px solid red;
+}
+
+.following-button:hover .following-btn {
+  display: none;
+}
+
+.following-button:hover .following-btn-hover {
+  display: inline;
+}
