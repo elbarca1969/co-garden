@@ -13,6 +13,8 @@
             <div class="user-edit-btn">
               <%= link_to "プロフィールを編集", edit_user_path(current_user) %>
             </div>
+          <% else %>
+            <%= render partial: "/relationships/follow_btn", locals: { user: @user } %>
           <% end %>
         </div>
       </div>
