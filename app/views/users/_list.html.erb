@@ -13,7 +13,7 @@
       <% end %>
       <div class="user-list-upper-right">
         <% unless current_user.id == user.id %>
-          <%= link_to "フォロー中", root_path %>
+          <%= render partial: "/relationships/follow_btn", locals: { user: user } %>
         <% end %>
       </div>
     </div>
