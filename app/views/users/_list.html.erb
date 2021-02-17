@@ -1,0 +1,26 @@
+<% users.each do |user| %>
+  <div class="user-list">
+    <div class="user-list-upper">
+      <%= link_to user_path(user) do %>
+        <div class="user-list-upper-left">
+          <div class="user-list-nickname">
+            <%= user.nickname %>
+          </div>
+          <div class="user-list-username">
+            <%= "@#{user.user_name}" %>
+          </div>
+        </div>
+      <% end %>
+      <div class="user-list-upper-right">
+        <% unless current_user.id == user.id %>
+          <%= link_to "フォロー中", root_path %>
+        <% end %>
+      </div>
+    </div>
+    <%= link_to user_path(user) do %>  
+      <div class="user-list-introduction">
+        <%= user.introduction %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

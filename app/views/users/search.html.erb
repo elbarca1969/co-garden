@@ -1,0 +1,42 @@
+<header>
+  <%= render "contents/header" %>
+</header>
+<div class="wrapper">
+  <div class="search">
+    <div class="search-header">
+      <div class="search-header-left">
+        <%= link_to "コンテンツ", search_contents_path %>
+      </div>
+      <div class="search-header-right">
+        <%= link_to "ユーザー", search_users_path %>
+      </div>
+    </div>
+    <div class="users-search">
+      <%= search_form_for @q, url: search_users_path do |f| %>
+        <div class="main-search">
+          <div class="main-search-container">
+            <div class="main-search-user">
+              <%= f.search_field :nickname_or_user_name_cont, placeholder: "キーワードを入力", class: "users-search-textarea" %>
+            </div>
+            <label class="main-search-btn">
+              <i class="fa fa-search fa-fw"></i>
+              <%= f.submit class: "hidden" %>
+            </label>
+          </div>
+        </div>
+        <% if @users.present? %>
+          <div class="search-users">
+            <%= render partial: "list", locals: { users: @users } %>
+          </div>
+        <% else %>
+          <div class="user-empty-message">
+            一致するユーザーがいません。
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="post">
+  <%= render "contents/post" %>
+</div>
