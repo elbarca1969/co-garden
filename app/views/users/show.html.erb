@@ -42,10 +42,10 @@
         </div>
         <div class="user-show-follow">
           <div class="user-show-following">
-            フォロー中◯人
+            <%= link_to "フォロー中#{@user.followings.length}人", root_path %>
           </div>
           <div class="user-show-follower">
-            フォロワー◯人
+            <%= link_to "フォロワー#{@user.followers.length}人", root_path %>
           </div>
         </div>
       </div>
