@@ -1,0 +1,25 @@
+/* フォローボタン */
+.follow-btn {
+  display: inline-block;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 2px 0;
+  border-radius: 3px;
+  width: 100px;
+}
+
+.follow-btn:hover {
+  cursor: pointer;
+}
+
+.following-btn {
+  background-color: #0095f6;
+  color: #FFFFFF;
+  border: 1px solid #0095f6;
+}
+
+.unfollow-btn {
+  border: 1px solid #0095f6;
+  background-color: #FFFFFF;
+  color: #0095f6;
+}
