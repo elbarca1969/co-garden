@@ -172,7 +172,7 @@
 }
 
 /* ユーザー検索ページ */
-.search-user .search-header-right a {
+.search-user .search-upper-right a {
   background-color: #333;
   color: #FFFFFF;
 }

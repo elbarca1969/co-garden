@@ -551,17 +551,17 @@ figure > img {
   margin: 70px auto 150px;
 }
 
-.search-header {
+.search-upper {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 
-.search-header-left {
+.search-upper-left {
   margin-right: 30px;
 }
 
-.search-header a {
+.search-upper a {
   display: block;
   width: 300px;
   padding: 10px 0;
@@ -572,13 +572,13 @@ figure > img {
   font-weight: bold;
 }
 
-.search-header a:hover {
+.search-upper a:hover {
   background-color: #555;
   color: #FFFFFF;
   cursor: pointer;
 }
 
-.search-content .search-header-left a {
+.search-content .search-upper-left a {
   background-color: #333;
   color: #FFFFFF;
 }
