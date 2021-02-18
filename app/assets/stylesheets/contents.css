@@ -44,7 +44,8 @@ header {
 
 .home-header .home-icon a,
 .search-header .search-icon a,
-.follow-header .friends-icon a {
+.follow-header .friends-icon a,
+.user-header .user-icon {
   background-color: #333;
   color: #FFFFFF;
 }

@@ -1,6 +1,12 @@
-<header>
-  <%= render "contents/header" %>
-</header>
+<% if current_user.id == @user.id %>
+  <header class="user-header">
+    <%= render "contents/header" %>
+  </header>
+<% else %>
+  <header>
+    <%= render "contents/header" %>
+  </header>
+<% end %>
 <div class="wrapper">
   <div class="user-show">
     <div class="user-show-container">
