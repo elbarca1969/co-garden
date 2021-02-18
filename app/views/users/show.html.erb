@@ -1,6 +1,12 @@
-<header>
-  <%= render "contents/header" %>
-</header>
+<% if current_user.id == @user.id %>
+  <header class="user-header">
+    <%= render "contents/header" %>
+  </header>
+<% else %>
+  <header>
+    <%= render "contents/header" %>
+  </header>
+<% end %>
 <div class="wrapper">
   <div class="user-show">
     <div class="user-show-container">
@@ -13,6 +19,8 @@
             <div class="user-edit-btn">
               <%= link_to "プロフィールを編集", edit_user_path(current_user) %>
             </div>
+          <% else %>
+            <%= render partial: "/relationships/follow_btn", locals: { user: @user } %>
           <% end %>
         </div>
       </div>
@@ -40,10 +48,10 @@
         </div>
         <div class="user-show-follow">
           <div class="user-show-following">
-            フォロー中◯人
+            <%= link_to "フォロー中#{@user.followings.length}人", following_relationship_path(@user) %>
           </div>
           <div class="user-show-follower">
-            フォロワー◯人
+            <%= link_to "フォロワー#{@user.followers.length}人", followers_relationship_path(@user) %>
           </div>
         </div>
       </div>

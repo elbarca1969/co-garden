@@ -1,0 +1,37 @@
+<% if current_user.id == @user.id %>
+  <header class="follow-header">
+    <%= render "contents/header" %>
+  </header>
+<% else %>
+  <header>
+    <%= render "contents/header" %>
+  </header>
+<% end %>
+<div class="wrapper following">
+  <div class="follow">
+    <div class="follow-header">
+      <div class="follow-header-upper">
+        <div class="follow-nickname">
+          <%= @user.nickname %>
+        </div>
+        <div class="follow-username">
+          <%= "@#{@user.user_name}" %>
+        </div>
+      </div>
+      <div class="follow-header-lower">
+        <div class="follow-header-lower-left">
+          <%= link_to "フォロー中", following_relationship_path(@user) %>
+        </div>
+        <div class="follow-header-lower-right">
+          <%= link_to "フォロワー", followers_relationship_path(@user) %>
+        </div>
+      </div>
+    </div>
+    <div class="follow-lower">
+      <%= render partial: "/users/list", locals: { users: @followings } %>
+    </div>
+  </div>
+</div>
+<div class="post">
+  <%= render "contents/post" %>
+</div>

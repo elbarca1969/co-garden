@@ -42,6 +42,14 @@ header {
   cursor: pointer;
 }
 
+.home-header .home-icon a,
+.search-header .search-icon a,
+.follow-header .friends-icon a,
+.user-header .user-icon {
+  background-color: #333;
+  color: #FFFFFF;
+}
+
 .user-icon {
   border: 1px solid #333;
   border-radius: 50px;
@@ -109,8 +117,7 @@ header {
   margin-right: 30px;
 }
 
-.main-header-left a,
-.main-header-right a {
+.main-header a {
   display: block;
   width: 300px;
   padding: 10px 0;
@@ -121,8 +128,12 @@ header {
   font-weight: bold;
 }
 
-.main-header-left a:hover,
-.main-header-right a:hover {
+.main-header a:hover {
+  background-color: #555;
+  color: #FFFFFF;
+}
+
+.mycontents .main-header-left a {
   background-color: #333;
   color: #FFFFFF;
 }
@@ -551,18 +562,17 @@ figure > img {
   margin: 70px auto 150px;
 }
 
-.search-header {
+.search-upper {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 
-.search-header-left {
+.search-upper-left {
   margin-right: 30px;
 }
 
-.search-header-left a,
-.search-header-right a {
+.search-upper a {
   display: block;
   width: 300px;
   padding: 10px 0;
@@ -573,9 +583,13 @@ figure > img {
   font-weight: bold;
 }
 
-.search-header-left a:hover,
-.search-header-right a:hover {
-  background-color: #333;
+.search-upper a:hover {
+  background-color: #555;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.search-content .search-upper-left a {
+  background-color: #333;
+  color: #FFFFFF;
 }
