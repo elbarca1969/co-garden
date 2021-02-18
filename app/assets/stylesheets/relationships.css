@@ -82,7 +82,8 @@
   cursor: pointer;
 }
 
-.following .follow-header-lower-left a {
+.following .follow-header-lower-left a,
+.followers .follow-header-lower-right a {
   background-color: #333;
   color: #FFFFFF;
 }
