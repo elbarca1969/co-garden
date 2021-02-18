@@ -561,8 +561,7 @@ figure > img {
   margin-right: 30px;
 }
 
-.search-header-left a,
-.search-header-right a {
+.search-header a {
   display: block;
   width: 300px;
   padding: 10px 0;
@@ -573,9 +572,13 @@ figure > img {
   font-weight: bold;
 }
 
-.search-header-left a:hover,
-.search-header-right a:hover {
-  background-color: #333;
+.search-header a:hover {
+  background-color: #555;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.search-content .search-header-left a {
+  background-color: #333;
+  color: #FFFFFF;
 }
