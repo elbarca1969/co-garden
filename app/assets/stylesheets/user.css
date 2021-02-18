@@ -172,6 +172,11 @@
 }
 
 /* ユーザー検索ページ */
+.search-user .search-header-right a {
+  background-color: #333;
+  color: #FFFFFF;
+}
+
 .users-search-textarea {
   height: 30px;
   width: 570px;
