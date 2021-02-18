@@ -1,6 +1,12 @@
-<header class="follow-header">
-  <%= render "contents/header" %>
-</header>
+<% if current_user.id == @user.id %>
+  <header class="follow-header">
+    <%= render "contents/header" %>
+  </header>
+<% else %>
+  <header>
+    <%= render "contents/header" %>
+  </header>
+<% end %>
 <div class="wrapper followers">
   <div class="follow">
     <div class="follow-header">
