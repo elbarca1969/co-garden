@@ -38,3 +38,51 @@
 .following-button:hover .following-btn-hover {
   display: inline;
 }
+
+/* フォロー・フォロワー一覧ページ */
+.follow {
+  width: 630px;
+  margin: 70px auto 150px;
+}
+
+.follow-nickname {
+  font-size: large;
+  font-weight: bold;
+}
+
+.follow-username {
+  font-size: small;
+  color: #999;
+}
+
+.follow-header-lower {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.follow-header-lower-left a {
+  margin-right: 30px;
+}
+
+.follow-header-lower a {
+  display: block;
+  width: 300px;
+  padding: 10px 0;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.follow-header-lower a:hover {
+  background-color: #555;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.following .follow-header-lower-left a {
+  background-color: #333;
+  color: #FFFFFF;
+}
