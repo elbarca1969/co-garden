@@ -42,3 +42,19 @@
 .try-btn:hover .try-icon-hover {
   display: block;
 }
+
+/* トライ中の人数表示 */
+.try-container {
+  display: flex;
+}
+
+.try-number {
+  margin-left: 10px;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.try-number:hover {
+  text-decoration: underline;
+}
