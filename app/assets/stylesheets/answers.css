@@ -1,50 +1,44 @@
 /* 回答済・未回答ボタン */
-.answer {
-  display: flex;
-}
-
 .answer-icon {
+  text-align: center;
   color: #FFFFFF;
+  font-size: small;
+  font-weight: bold;
   background-color: #00CED1;
   border: 1px solid #00CED1;
-  padding: 2px 4px;
-  border-radius: 50px;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
 }
 
 .no-answer-icon {
+  text-align: center;
   color: #00CED1;
+  font-size: small;
+  font-weight: bold;
   border: 1px solid #00CED1;
-  padding: 2px 4px;
-  border-radius: 50px;
-}
-
-.answer-text {
-  padding: 2px;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
 }
 
 /* 回答済・未回答ボタンのホバー時 */
-.answer-text-hover {
+.answer-icon-hover {
   display: none;
-  padding: 2px;
-}
-
-.answer:hover .answer-text {
-  display: none;
-}
-
-.answer:hover .answer-text-hover {
-  display: block;
-  cursor: pointer;
-}
-
-.answer:hover .answer-icon {
+  text-align: center;
   color: #00CED1;
-  background-color: #FFFFFF;
+  font-size: small;
+  font-weight: bold;
   border: 1px solid #00CED1;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
 }
 
-.answer:hover .no-answer-icon {
-  color: #FFFFFF;
-  background-color: #00CED1;
-  border: 1px solid #00CED1;
+.answer-btn:hover .answer-icon {
+  display: none;
+}
+
+.answer-btn:hover .answer-icon-hover {
+  display: block;
 }

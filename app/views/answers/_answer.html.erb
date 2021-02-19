@@ -1,29 +1,18 @@
 <% unless content.answer_user(current_user.id).blank? %>
   <%= link_to(content_answer_path(content.id, content.answers[0].id), method: :delete, remote: true) do %>
-    <div class="answer">
+    <div class="answer-btn">
       <div class="answer-icon">
-        <i class="fa fa-check fa-fw"></i>
+        <i class="fa fa-check fa-fw"></i>回答済
       </div>
-      <div class="answer-text">
-        回答済
-      </div>
-      <div class="answer-text-hover">
-        未回答
+      <div class="answer-icon-hover">
+        <i class="fa fa-check fa-fw"></i>未回答にする
       </div>
     </div>
   <% end %>
 <% else %>
   <%= link_to(content_answers_path(content.id), method: :post, remote: true) do %>
-    <div class="answer">
-      <div class="no-answer-icon">
-        <i class="fa fa-check fa-fw"></i>
-      </div>
-      <div class="answer-text">
-        未回答
-      </div>
-      <div class="answer-text-hover">
-        回答済
-      </div>
+    <div class="no-answer-icon">
+      <i class="fa fa-check fa-fw"></i>回答済にする
     </div>
   <% end %>
 <% end %>
