@@ -12,6 +12,7 @@ class User < ApplicationRecord
 
   has_many :contents
   has_many :answers, dependent: :destroy
+  has_many :tries, dependent: :destroy
 
   has_many :relationships
   has_many :followings, through: :relationships, source: :follow
