@@ -1,0 +1,23 @@
+/* トライボタン */
+.try-icon {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: small;
+  font-weight: bold;
+  background-color: #FF4F02;
+  border: 1px solid #FF4F02;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
+}
+
+.no-try-icon {
+  text-align: center;
+  color: #FF4F02;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid #FF4F02;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
+}
