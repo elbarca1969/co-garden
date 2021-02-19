@@ -544,12 +544,6 @@ figure > img {
   justify-content: space-around;
 }
 
-.content-show-lower-try {
-  padding: 5px;
-  border: 1px solid #333;
-  border-radius: 3px;
-}
-
 /* コンテンツ検索ページ */
 .search {
   width: 1024px;
