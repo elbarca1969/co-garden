@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_17_074504) do
+ActiveRecord::Schema.define(version: 2021_02_19_053520) do
 
   create_table "action_text_rich_texts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -74,6 +74,16 @@ ActiveRecord::Schema.define(version: 2021_02_17_074504) do
     t.index ["user_id"], name: "index_relationships_on_user_id"
   end
 
+  create_table "tries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "content_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["content_id"], name: "index_tries_on_content_id"
+    t.index ["user_id", "content_id"], name: "index_tries_on_user_id_and_content_id", unique: true
+    t.index ["user_id"], name: "index_tries_on_user_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
     t.string "user_name", null: false
@@ -97,4 +107,6 @@ ActiveRecord::Schema.define(version: 2021_02_17_074504) do
   add_foreign_key "contents", "users"
   add_foreign_key "relationships", "users"
   add_foreign_key "relationships", "users", column: "follow_id"
+  add_foreign_key "tries", "contents"
+  add_foreign_key "tries", "users"
 end
