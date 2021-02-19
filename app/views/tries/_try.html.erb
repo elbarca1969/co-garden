@@ -1,8 +1,13 @@
 <% unless content.try_user(current_user.id).blank? %>
   <%= link_to(content_try_path(content.id, content.tries[0].id), method: :delete, remote: true) do %>
-    <div class="try-icon">
-      <i class="fa fa-thumbtack fa-fw"></i>トライ中
-    </div>
+    <div class="try-btn">
+        <div class="try-icon">
+          <i class="fa fa-thumbtack fa-fw"></i>トライ中
+        </div>
+        <div class="try-icon-hover">
+          <i class="fa fa-thumbtack fa-fw"></i>トライをやめる
+        </div>
+      </div>
   <% end %>
 <% else %>
   <%= link_to(content_tries_path(content.id), method: :post, remote: true) do %>

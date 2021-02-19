@@ -21,3 +21,24 @@
   padding: 3px 0;
   width: 120px;
 }
+
+/* トライボタンのホバー時 */
+.try-icon-hover {
+  display: none;
+  text-align: center;
+  color: #FF4F02;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid #FF4F02;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
+}
+
+.try-btn:hover .try-icon {
+  display: none;
+}
+
+.try-btn:hover .try-icon-hover {
+  display: block;
+}
