@@ -23,6 +23,10 @@ class Content < ApplicationRecord
     answers.find_by(user_id: user_id)
   end
 
+  def try_user(user_id)
+    tries.find_by(user_id: user_id)
+  end
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :grade
   belongs_to :subject
