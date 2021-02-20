@@ -46,6 +46,9 @@
         <div class="user-show-content-count">
           <%= "コンテンツ#{@user.contents.length}件" %>
         </div>
+        <div class="user-show-trycontents">
+          <%= link_to "トライ中#{@user.try_contents.length}件", root_path %>
+        </div>
         <div class="user-show-follow">
           <div class="user-show-following">
             <%= link_to "フォロー中#{@user.followings.length}人", following_relationship_path(@user) %>
