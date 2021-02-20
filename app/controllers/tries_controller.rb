@@ -1,6 +1,11 @@
 class TriesController < ApplicationController
   before_action :set_content, only: [:create, :destroy, :list]
 
+  def index
+    @q = current_user.try_contents.ransack(params[:q])
+    @trycontents = @q.result.order("created_at DESC").includes(:user, [:rich_text_question], :answers, :tries)
+  end
+
   def create
     @try = Try.create(user_id: current_user.id, content_id: @content.id)
   end
