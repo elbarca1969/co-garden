@@ -47,7 +47,7 @@
           <%= "コンテンツ#{@user.contents.length}件" %>
         </div>
         <div class="user-show-trycontents">
-          <%= link_to "トライ中#{@user.try_contents.length}件", root_path %>
+          <%= link_to "トライ中#{@user.try_contents.length}件", try_user_path(@user) %>
         </div>
         <div class="user-show-follow">
           <div class="user-show-following">
