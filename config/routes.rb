@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       get :search
     end
     resources :answers, only: [:create, :destroy]
-    resources :tries, only: [:create, :destroy] do
+    resources :tries, only: [:index, :create, :destroy] do
       member do
         get :list
       end
