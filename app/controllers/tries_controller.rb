@@ -10,6 +10,11 @@ class TriesController < ApplicationController
     @try.destroy
   end
 
+  def list
+    @tries = @content.tries
+    @users = User.where(tries: @tries)
+  end
+
   private
 
   def set_content
