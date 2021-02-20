@@ -163,6 +163,11 @@ header {
   margin-right: 5px;
 }
 
+.main-search-grade > select:hover,
+.main-search-subject > select:hover {
+  cursor: pointer;
+}
+
 .search-textarea {
   width: 400px;
 }
