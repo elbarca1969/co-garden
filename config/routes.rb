@@ -6,7 +6,11 @@ Rails.application.routes.draw do
       get :search
     end
     resources :answers, only: [:create, :destroy]
-    resources :tries, only: [:create, :destroy]
+    resources :tries, only: [:create, :destroy] do
+      member do
+        get :list
+      end
+    end
   end
   resources :users, only: [:show, :edit, :update] do
     collection do
