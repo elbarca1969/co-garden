@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_user, only: [:show, :edit, :update]
+  before_action :set_user, only: [:show, :edit, :update, :try]
 
   def show
     @q = @user.contents.ransack(params[:q])
@@ -24,6 +24,11 @@ class UsersController < ApplicationController
   def search
     @q = User.ransack(params[:q])
     @users = @q.result
+  end
+
+  def try
+    @q = @user.try_contents.ransack(params[:q])
+    @trycontents = @q.result.order("created_at DESC").includes(:user, [:rich_text_question], :answers, :tries)
   end
 
   private
