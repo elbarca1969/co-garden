@@ -117,6 +117,12 @@
   margin-right: 30px;
 }
 
+.user-show-trycontents:hover,
+.user-show-following:hover,
+.user-show-follower:hover {
+  text-decoration: underline;
+}
+
 .user-show-follow {
   display: flex;
 }
