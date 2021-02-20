@@ -58,3 +58,14 @@
 .try-number:hover {
   text-decoration: underline;
 }
+
+/* トライ中ユーザー一覧ページ */
+.try-list {
+  width: 630px;
+  margin: 70px auto 150px;
+}
+
+.try-list-title {
+  font-size: large;
+  font-weight: bold;
+}
