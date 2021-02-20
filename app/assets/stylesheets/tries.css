@@ -69,3 +69,9 @@
   font-size: large;
   font-weight: bold;
 }
+
+/* トライコンテンツ一覧ページ */
+.trycontents .main-header-right a {
+  background-color: #333;
+  color: #FFFFFF;
+}
