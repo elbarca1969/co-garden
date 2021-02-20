@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="try-number">
-        <%= link_to "#{content.tries.length}人がトライ中", root_path %>
+        <%= link_to "#{content.tries.length}人がトライ中", list_content_try_path(content, :id) %>
       </div>
     </div>
   <% end %>
@@ -21,7 +21,7 @@
         <i class="fa fa-thumbtack fa-fw"></i>トライする
       </div>
       <div class="try-number">
-        <%= link_to "#{content.tries.length}人がトライ中", root_path %>
+        <%= link_to "#{content.tries.length}人がトライ中", list_content_try_path(content, :id) %>
       </div>
     </div>
   <% end %>

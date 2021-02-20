@@ -1,5 +1,5 @@
 class TriesController < ApplicationController
-  before_action :set_content, only: [:create, :destroy]
+  before_action :set_content, only: [:create, :destroy, :list]
 
   def create
     @try = Try.create(user_id: current_user.id, content_id: @content.id)
