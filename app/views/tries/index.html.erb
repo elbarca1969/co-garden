@@ -12,23 +12,7 @@
     </div>
   </div>
   <%= search_form_for @q, url: content_tries_path do |f| %>
-    <div class="main-search">
-      <div class="main-search-container">
-        <div class="main-search-grade">
-          <%= f.collection_select :grade_id_eq, Grade.where.not(id: 1), :id, :name, include_blank: "学　年" %>
-        </div>
-        <div class="main-search-subject">
-          <%= f.collection_select :subject_id_eq, Subject.where.not(id: 1), :id, :name, include_blank: "教　科" %>
-        </div>
-        <div class="main-search-category">
-          <%= f.search_field :category_cont, placeholder: "カテゴリーを入力", class: "search-textarea" %>
-        </div>
-        <label class="main-search-btn">
-          <i class="fa fa-search fa-fw"></i>
-          <%= f.submit class: "hidden" %>
-        </label>
-      </div>
-    </div>
+    <%= render partial: "contents/search", locals: { f: f } %>
     <% if @trycontents.present? %>
       <div class="main-contents">
         <%= render partial: "contents/content", collection: @trycontents %>
