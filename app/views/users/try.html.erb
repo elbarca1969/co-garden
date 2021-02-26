@@ -1,0 +1,25 @@
+<header>
+  <%= render "contents/header" %>
+</header>
+<div class="wrapper">
+  <div class="user-try">
+    <div class="user-try-title">
+      <%= @user.nickname %>のトライコンテンツ
+    </div>
+    <%= search_form_for @q, url: try_user_path do |f| %>
+      <%= render partial: "contents/search", locals: { f: f } %>
+      <% if @trycontents.present? %>
+        <div class="main-contents">
+          <%= render partial: "contents/content", collection: @trycontents %>
+        </div>
+      <% else %>
+        <div class="content-empty-message">
+          一致するコンテンツがありません。
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<div class="post">
+  <%= render "contents/post" %>
+</div>

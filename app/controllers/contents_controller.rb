@@ -4,7 +4,7 @@ class ContentsController < ApplicationController
 
   def index
     @q = current_user.contents.ransack(params[:q])
-    @contents = @q.result.order("created_at DESC").includes([:rich_text_question], :answers)
+    @contents = @q.result.order("created_at DESC").includes([:rich_text_question], :answers, :tries)
   end
 
   def new
@@ -51,7 +51,7 @@ class ContentsController < ApplicationController
 
   def search
     @q = Content.ransack(params[:q])
-    @contents = @q.result.order("created_at DESC").includes([:rich_text_question], :answers, :user)
+    @contents = @q.result.order("created_at DESC").includes([:rich_text_question], :answers, :user, :tries)
   end
 
   private

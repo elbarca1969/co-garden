@@ -1,0 +1,16 @@
+<header>
+  <%= render "contents/header" %>
+</header>
+<div class="wrapper">
+  <div class="try-list">
+    <div class="try-list-title">
+      トライ中のユーザー
+    </div>
+    <div class="try-list-users">
+      <%= render partial: "users/list", locals: { users: @users } %>
+    </div>
+  </div>
+</div>
+<div class="post">
+  <%= render "contents/post" %>
+</div>

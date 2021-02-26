@@ -41,7 +41,9 @@
         </div>
       </div>
       <div class="main-content-lower-try">
-        <i class="fa fa-thumbtack fa-fw"></i>トライする(10人がトライ)
+        <div id="tries-button<%= content.id %>">
+          <%= render partial: "tries/try", locals: { content: content, try: @try } %>
+        </div>
       </div>
     </div>
   </div>

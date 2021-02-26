@@ -1,0 +1,77 @@
+/* トライボタン */
+.try-icon {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: small;
+  font-weight: bold;
+  background-color: #FF4F02;
+  border: 1px solid #FF4F02;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
+}
+
+.no-try-icon {
+  text-align: center;
+  color: #FF4F02;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid #FF4F02;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
+}
+
+/* トライボタンのホバー時 */
+.try-icon-hover {
+  display: none;
+  text-align: center;
+  color: #FF4F02;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid #FF4F02;
+  border-radius: 3px;
+  padding: 3px 0;
+  width: 120px;
+}
+
+.try-btn:hover .try-icon {
+  display: none;
+}
+
+.try-btn:hover .try-icon-hover {
+  display: block;
+}
+
+/* トライ中の人数表示 */
+.try-container {
+  display: flex;
+}
+
+.try-number {
+  margin-left: 10px;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.try-number:hover {
+  text-decoration: underline;
+}
+
+/* トライ中ユーザー一覧ページ */
+.try-list {
+  width: 630px;
+  margin: 70px auto 150px;
+}
+
+.try-list-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+/* トライコンテンツ一覧ページ */
+.trycontents .main-header-right a {
+  background-color: #333;
+  color: #FFFFFF;
+}

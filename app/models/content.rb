@@ -2,6 +2,7 @@ class Content < ApplicationRecord
 
   belongs_to :user
   has_many :answers, dependent: :destroy
+  has_many :tries, dependent: :destroy
 
   has_rich_text :question
   has_rich_text :answer
@@ -20,6 +21,10 @@ class Content < ApplicationRecord
 
   def answer_user(user_id)
     answers.find_by(user_id: user_id)
+  end
+
+  def try_user(user_id)
+    tries.find_by(user_id: user_id)
   end
 
   extend ActiveHash::Associations::ActiveRecordExtensions

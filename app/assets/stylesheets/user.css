@@ -112,8 +112,15 @@
 }
 
 .user-show-content-count,
+.user-show-trycontents,
 .user-show-following {
   margin-right: 30px;
+}
+
+.user-show-trycontents:hover,
+.user-show-following:hover,
+.user-show-follower:hover {
+  text-decoration: underline;
 }
 
 .user-show-follow {
@@ -239,4 +246,16 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+/* 各ユーザーのトライコンテンツ一覧ページ */
+.user-try {
+  width: 1024px;
+  margin: 70px auto 150px;
+}
+
+.user-try-title {
+  font-size: large;
+  font-weight: bold;
+  padding: 0 0 10px 10px;
 }

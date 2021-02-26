@@ -43,6 +43,7 @@ header {
 }
 
 .home-header .home-icon a,
+.try-header .thumbtack-icon a,
 .search-header .search-icon a,
 .follow-header .friends-icon a,
 .user-header .user-icon {
@@ -162,6 +163,11 @@ header {
   margin-right: 5px;
 }
 
+.main-search-grade > select:hover,
+.main-search-subject > select:hover {
+  cursor: pointer;
+}
+
 .search-textarea {
   width: 400px;
 }
@@ -247,12 +253,6 @@ header {
 .main-content-lower {
   display: flex;
   justify-content: space-around;
-}
-
-.main-content-lower-try {
-  padding: 5px;
-  border: 1px solid #333;
-  border-radius: 3px;
 }
 
 /* コンテンツ投稿ページ遷移ボタン */
@@ -548,12 +548,6 @@ figure > img {
 .content-show-lower {
   display: flex;
   justify-content: space-around;
-}
-
-.content-show-lower-try {
-  padding: 5px;
-  border: 1px solid #333;
-  border-radius: 3px;
 }
 
 /* コンテンツ検索ページ */
