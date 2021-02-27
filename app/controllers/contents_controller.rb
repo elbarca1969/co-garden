@@ -24,6 +24,8 @@ class ContentsController < ApplicationController
     if current_user.id != @content.user_id && @content.release_id == 2
       redirect_to root_path
     end
+    @comment = Comment.new
+    @comments = @content.comments.includes(:user)
   end
 
   def edit
