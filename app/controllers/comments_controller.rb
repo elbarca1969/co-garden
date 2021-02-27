@@ -8,5 +8,11 @@ class CommentsController < ApplicationController
       render :index
     end
   end
-  
+
+  private
+
+  def comment_params
+    params.require(:comment).permit(:comment_content, :user_id, :content_id)
+  end
+
 end
