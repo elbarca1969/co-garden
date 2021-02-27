@@ -11,6 +11,7 @@ Rails.application.routes.draw do
         get :list
       end
     end
+    resources :comments, only: [:create, :destroy]
   end
   resources :users, only: [:show, :edit, :update] do
     collection do
