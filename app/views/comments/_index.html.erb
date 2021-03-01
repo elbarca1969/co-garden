@@ -1,0 +1,33 @@
+<% if comments.present? %>
+  <div class="comments-count">
+    コメント<%= comments.count %>件
+  </div>
+  <% comments.reverse_each do |comment| %>
+    <div class="comment-container">
+      <% unless comment.id.nil? %>
+        <div class="comment-container-upper">
+          <div class="comment-user-nickname">
+            <%= link_to comment.user.nickname, user_path(comment.user) %>
+          </div>
+          <div class="comment-date">
+            <%= "#{content_time(comment.created_at)}" %>
+          </div>
+          <div class="comment-delete">
+            <% if comment.user_id == current_user.id %>
+              <%= link_to content_comment_path(comment.content_id, comment.id), method: :delete, remote: true do %>
+                削除する
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+        <div class="comment-content">
+          <%= comment.comment_content %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+<% else %>
+  <div class="comments-empty-message">
+    コメントはありません
+  </div>
+<% end %>

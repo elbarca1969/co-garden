@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_19_053520) do
+ActiveRecord::Schema.define(version: 2021_02_27_043236) do
 
   create_table "action_text_rich_texts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -51,6 +51,16 @@ ActiveRecord::Schema.define(version: 2021_02_19_053520) do
     t.index ["content_id"], name: "index_answers_on_content_id"
     t.index ["user_id", "content_id"], name: "index_answers_on_user_id_and_content_id", unique: true
     t.index ["user_id"], name: "index_answers_on_user_id"
+  end
+
+  create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "comment_content", null: false
+    t.bigint "user_id", null: false
+    t.bigint "content_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["content_id"], name: "index_comments_on_content_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "contents", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -104,6 +114,8 @@ ActiveRecord::Schema.define(version: 2021_02_19_053520) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "answers", "contents"
   add_foreign_key "answers", "users"
+  add_foreign_key "comments", "contents"
+  add_foreign_key "comments", "users"
   add_foreign_key "contents", "users"
   add_foreign_key "relationships", "users"
   add_foreign_key "relationships", "users", column: "follow_id"

@@ -526,12 +526,15 @@ figure > img {
 }
 
 .content-show-answer-open {
+  text-align: center;
   color: #FFFFFF;
+  font-size: small;
+  font-weight: bold;
   background-color: #0095f6;
   border: 1px solid #0095f6;
   border-radius: 3px;
-  display: inline-block;
-  padding: 5px;
+  padding: 3px 0;
+  width: 120px;
   margin: 0 10px 10px;
 }
 
@@ -548,6 +551,29 @@ figure > img {
 .content-show-lower {
   display: flex;
   justify-content: space-around;
+}
+
+/* コメント部分 */
+.content-show-comment {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.content-show-comment-open {
+  margin: 10px;
+  font-size: small;
+  color: #999;
+}
+
+.content-show-comment-open:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content-show-comment-container {
+  display: none;
+  margin: 10px;
 }
 
 /* コンテンツ検索ページ */

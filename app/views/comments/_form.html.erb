@@ -1,0 +1,10 @@
+<%= form_with(model: [content, comment], url: content_comments_path(@content)) do |f| %>
+  <div class="comment-form">
+    <div class="comment-input">
+      <%= f.text_area :comment_content, placeholder: "コメントを追加...", class: "comment-textarea" %>
+    </div>
+    <div class="comment-action">
+      <%= f.submit "送信", class: "comment-submit-btn" %>
+    </div>
+  </div>
+<% end %>

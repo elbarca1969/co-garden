@@ -9,7 +9,7 @@ $(function(){
     } else {
       answer.addClass("open");
       answer.slideDown(500);
-      button.text("答えを隠す")
+      button.text("答えを閉じる")
     }
   });
 });
