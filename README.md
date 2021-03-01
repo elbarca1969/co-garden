@@ -51,11 +51,11 @@
 
 ## comments テーブル
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| comment | text       | null: false                    |
-| user    | references | null: false, foreign_key: true |
-| content | references | null: false, foreign_key: true |
+| Column          | Type       | Options                        |
+| --------------- | ---------- | ------------------------------ |
+| comment_content | text       | null: false                    |
+| user            | references | null: false, foreign_key: true |
+| content         | references | null: false, foreign_key: true |
 
 ### Association
 
