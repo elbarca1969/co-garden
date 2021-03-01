@@ -550,6 +550,28 @@ figure > img {
   justify-content: space-around;
 }
 
+/* コメント部分 */
+.content-show-comment {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.content-show-comment-open {
+  margin: 10px;
+  font-size: small;
+  color: #999;
+}
+
+.content-show-comment-open:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content-show-comment-container {
+  margin: 10px;
+}
+
 /* コンテンツ検索ページ */
 .search {
   width: 1024px;
