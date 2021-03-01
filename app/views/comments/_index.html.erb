@@ -1,0 +1,24 @@
+<% if comments.present? %>
+  コメント<%= comments.count %>件
+  <% comments.reverse_each do |comment| %>
+    <% unless comment.id.nil? %>
+      <div class="comment-user-nickname">
+        <%= comment.user.nickname %>
+      </div>
+      <div class="comment-content">
+        <%= comment.comment_content %>
+      </div>
+      <div class="comment-delete">
+        <% if comment.user_id == current_user.id %>
+          <%= link_to content_comment_path(comment.content_id, comment.id), method: :delete, remote: true do %>
+            <i class="fa fa-trash fa-fw"></i>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+<% else %>
+  <div class="comments-empty-message">
+    コメントはありません
+  </div>
+<% end %>
