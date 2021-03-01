@@ -526,12 +526,15 @@ figure > img {
 }
 
 .content-show-answer-open {
+  text-align: center;
   color: #FFFFFF;
+  font-size: small;
+  font-weight: bold;
   background-color: #0095f6;
   border: 1px solid #0095f6;
   border-radius: 3px;
-  display: inline-block;
-  padding: 5px;
+  padding: 3px 0;
+  width: 120px;
   margin: 0 10px 10px;
 }
 
