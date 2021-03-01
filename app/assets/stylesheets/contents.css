@@ -569,6 +569,7 @@ figure > img {
 }
 
 .content-show-comment-container {
+  display: none;
   margin: 10px;
 }
 
