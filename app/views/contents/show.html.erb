@@ -103,6 +103,19 @@
         </div>
       </div>
     </div>
+    <div class="content-show-comment">
+      <div class="content-show-comment-open">
+        コメントを見る
+      </div>
+      <div class="content-show-comment-container">
+        <div class="comment-create">
+          <%= render partial: "comments/form", locals: { comment: @comment, content: @content } %>
+        </div>
+        <div id="comments_area">
+          <%= render partial: "comments/index", locals: { comments: @comments } %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="post">
