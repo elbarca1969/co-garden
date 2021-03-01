@@ -27,3 +27,32 @@
   border: 1px solid #444;
   cursor: pointer;
 }
+
+/* コメント表示部分 */
+.comment-container {
+  padding: 5px;
+}
+
+.comment-container-upper {
+  display: flex;
+  font-size: small;
+}
+
+.comment-user-nickname {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.comment-date {
+  color: #999;
+  margin-right: 30px;
+}
+
+.comment-delete a {
+  color: red;
+}
+
+.comment-user-nickname:hover,
+.comment-delete a:hover {
+  text-decoration: underline;
+}
