@@ -1,0 +1,4 @@
+<%= form_with(model: [content, comment], url: content_comments_path(@content)) do |f| %>
+  <%= f.text_area :comment_content, class: "comment-textarea" %>
+  <%= f.submit "送信", class: "comment-submit-btn" %>
+<% end %>
