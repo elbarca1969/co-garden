@@ -1,5 +1,5 @@
 class ContentsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: :new_guest
   before_action :set_content, only: [:show, :edit, :update, :destroy]
 
   def index
