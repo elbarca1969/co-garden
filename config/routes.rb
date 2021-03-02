@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "contents#index"
+  post '/contents/guest_sign_in', to: 'contents#new_guest'
   resources :contents do
     collection do
       get :search
