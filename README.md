@@ -173,7 +173,7 @@
 
 ### トライ機能
 - トライを押す
-[![Image from Gyazo](https://i.gyazo.com/1cce6d7eb46519e80ed5eca029a84714.gif)](https://gyazo.com/1cce6d7eb46519e80ed5eca029a84714)
+[![Image from Gyazo](https://i.gyazo.com/8b7bff17465474d70852a4bf8b29f24f.gif)](https://gyazo.com/8b7bff17465474d70852a4bf8b29f24f)
 ・「トライする」をクリックすると、そのコンテンツをトライコンテンツに追加することができます。<br>
 ・「トライ中」にカーソルを合わせると「トライをやめる」と表示され、それをクリックするとトライを解除することができます。<br>
 
