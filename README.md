@@ -167,7 +167,7 @@
 
 ### 回答済機能
 - 回答済を押す
-[![Image from Gyazo](https://i.gyazo.com/fa3b89797d2f507e608f0bed02fef380.gif)](https://gyazo.com/fa3b89797d2f507e608f0bed02fef380)
+[![Image from Gyazo](https://i.gyazo.com/8defdc066defdc28e4f79296e068a067.gif)](https://gyazo.com/8defdc066defdc28e4f79296e068a067)
 ・「回答済にする」をクリックすると、コンテンツを回答済にすることができます。<br>
 ・「回答済」にカーソルを合わせると「未回答にする」が表示され、それをクリックすると回答済を解除することができます。<br>
 
