@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: co_garden_production
-  username: co_garden
-  password: <%= ENV['CO_GARDEN_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
