@@ -16,6 +16,7 @@ require('./contentDelete.js')
 require('./introductionCount.js')
 require('./comment.js')
 require('./homeModal.js')
+require('./tryModal.js')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

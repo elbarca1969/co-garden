@@ -96,11 +96,13 @@ header {
   white-space: nowrap;
 }
 
-.home-icon {
+.home-icon,
+.thumbtack-icon {
   position: relative;
 }
 
-.home-modal {
+.home-modal,
+.try-modal {
   position: absolute;
   top: 50px;
   left: -15px;
