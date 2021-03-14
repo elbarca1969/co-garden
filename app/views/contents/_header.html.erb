@@ -25,6 +25,9 @@
       <%= link_to search_contents_path do %>
         <i class="fa fa-search fa-fw"></i>
       <% end %>
+      <div class="search-modal hidden">
+        検索
+      </div>
     </div>
     <div class="header-right-menu friends-icon">
       <%= link_to following_relationship_path(current_user) do %>

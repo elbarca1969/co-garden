@@ -97,12 +97,14 @@ header {
 }
 
 .home-icon,
-.thumbtack-icon {
+.thumbtack-icon,
+.search-icon {
   position: relative;
 }
 
 .home-modal,
-.try-modal {
+.try-modal,
+.search-modal {
   position: absolute;
   top: 50px;
   left: -15px;
