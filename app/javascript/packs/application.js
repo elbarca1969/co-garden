@@ -18,6 +18,7 @@ require('./comment.js')
 require('./homeModal.js')
 require('./tryModal.js')
 require('./searchModal.js')
+require('./friendsModal.js')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

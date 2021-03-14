@@ -98,13 +98,15 @@ header {
 
 .home-icon,
 .thumbtack-icon,
-.search-icon {
+.search-icon,
+.friends-icon {
   position: relative;
 }
 
 .home-modal,
 .try-modal,
-.search-modal {
+.search-modal,
+.friends-modal {
   position: absolute;
   top: 50px;
   left: -15px;
