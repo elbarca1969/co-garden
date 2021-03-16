@@ -163,8 +163,6 @@
 - トライコンテンツページ
 [![Image from Gyazo](https://i.gyazo.com/0e42e943f829d7d2f19fab641c423b10.gif)](https://gyazo.com/0e42e943f829d7d2f19fab641c423b10)
 ・トップページの「トライコンテンツ」もしくはヘッダーの画鋲のアイコンをクリックすると、自身のトライコンテンツ一覧ページに遷移します。<br>
-[![Image from Gyazo](https://i.gyazo.com/e5cf164a09d2254b9614386df3ee8851.gif)](https://gyazo.com/e5cf164a09d2254b9614386df3ee8851)
-・ユーザー詳細ページの「トライ中◯件」をクリックすれば、各ユーザーのトライコンテンツを閲覧することができます。<br>
 
 - トライ中ユーザー一覧
 [![Image from Gyazo](https://i.gyazo.com/a1482065e7b59b0b4b05a73e1568e73d.gif)](https://gyazo.com/a1482065e7b59b0b4b05a73e1568e73d)
