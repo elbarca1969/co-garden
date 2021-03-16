@@ -161,16 +161,16 @@
 
 ### トライ機能
 - トライを押す
-[![Image from Gyazo](https://i.gyazo.com/8b7bff17465474d70852a4bf8b29f24f.gif)](https://gyazo.com/8b7bff17465474d70852a4bf8b29f24f)
+[![Image from Gyazo](https://i.gyazo.com/b4c83f917032f835bc847cea722e15bd.gif)](https://gyazo.com/b4c83f917032f835bc847cea722e15bd)
 ・「トライする」をクリックすると、そのコンテンツをトライコンテンツに追加することができます。<br>
 ・「トライ中」にカーソルを合わせると「トライをやめる」と表示され、それをクリックするとトライを解除することができます。<br>
 
 - トライコンテンツページ
-[![Image from Gyazo](https://i.gyazo.com/0e42e943f829d7d2f19fab641c423b10.gif)](https://gyazo.com/0e42e943f829d7d2f19fab641c423b10)
+[![Image from Gyazo](https://i.gyazo.com/9e884550d23208e85a015f2c6337b3cc.gif)](https://gyazo.com/9e884550d23208e85a015f2c6337b3cc)
 ・トップページの「トライコンテンツ」もしくはヘッダーの画鋲のアイコンをクリックすると、自身のトライコンテンツ一覧ページに遷移します。<br>
 
 - トライ中ユーザー一覧
-[![Image from Gyazo](https://i.gyazo.com/a1482065e7b59b0b4b05a73e1568e73d.gif)](https://gyazo.com/a1482065e7b59b0b4b05a73e1568e73d)
+[![Image from Gyazo](https://i.gyazo.com/d8ff2fdca6884411a8c8e189fda68800.gif)](https://gyazo.com/d8ff2fdca6884411a8c8e189fda68800)
 ・「トライ」ボタンの横に表示されている「◯人がトライ中」をクリックすると、そのコンテンツにトライしているユーザー一覧が表示されます。<br>
 
 ### フォロー機能
