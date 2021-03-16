@@ -175,12 +175,12 @@
 
 ### フォロー機能
 - フォローを押す
-[![Image from Gyazo](https://i.gyazo.com/3091b32946b4e4425bdecb1359bb00a3.gif)](https://gyazo.com/3091b32946b4e4425bdecb1359bb00a3)
+[![Image from Gyazo](https://i.gyazo.com/05677f5535abbc20bccc690636f002ac.gif)](https://gyazo.com/05677f5535abbc20bccc690636f002ac)
 ・他のユーザーの詳細ページに表示されている「フォロー」をクリックすれば、フォローすることができます。<br>
 ・「フォロー中」にカーソルを合わせると「フォロー解除」と表示されます。それをクリックするとフォローを解除することができます。<br>
 
 - フォロー・フォロワーの一覧
-[![Image from Gyazo](https://i.gyazo.com/0ca29144af08fae113bf7d04a63b25b6.gif)](https://gyazo.com/0ca29144af08fae113bf7d04a63b25b6)
+[![Image from Gyazo](https://i.gyazo.com/aceda7dcef380bdb1b3f1cadd57c6c16.gif)](https://gyazo.com/aceda7dcef380bdb1b3f1cadd57c6c16)
 ・ユーザー詳細ページにフォロー中とフォロワーの人数が表示されます。<br>
 ・「フォロー中◯人」をクリックするとフォロー中一覧ページに遷移します。<br>
 ・「フォロワー◯人」をクリックするとフォロワー一覧ページに遷移します。<br>
