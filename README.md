@@ -89,7 +89,7 @@
 ・ログイン状態でないとアプリケーションを使用することができません。<br>
 
 - ゲストログイン
-[![Image from Gyazo](https://i.gyazo.com/ec164692cea85e3bb4c50541ee259c22.gif)](https://gyazo.com/ec164692cea85e3bb4c50541ee259c22)
+[![Image from Gyazo](https://i.gyazo.com/0ed3776cde2692dab8419b4125531f50.gif)](https://gyazo.com/0ed3776cde2692dab8419b4125531f50)
 ・「ゲストログイン(閲覧用)」をクリックすると、ゲストユーザーとしてログインすることができます。<br>
 
 - ログアウト
@@ -97,14 +97,14 @@
 ・ヘッダーのプロフィールアイコン(一番右)をクリックするとメニューが出現します。メニュー内の「ログアウト」をクリックするとログアウトすることができます。<br>
 
 - ユーザー詳細ページ
-[![Image from Gyazo](https://i.gyazo.com/80879e2b39e0832067a247f4f1a72702.gif)](https://gyazo.com/80879e2b39e0832067a247f4f1a72702)
+[![Image from Gyazo](https://i.gyazo.com/83caa1bb4a60e7ef665d04978dc037e6.gif)](https://gyazo.com/83caa1bb4a60e7ef665d04978dc037e6)
 ・ヘッダーのプロフィールアイコン(一番右)をクリックするとメニューが出現します。メニュー内のユーザー名をクリックすると自身のユーザー詳細ページに遷移することができます。<br>
 ・ユーザー本人には「プロフィールを編集」、本人以外には「フォロー」ボタンが表示されます。<br>
 ・設定されていれば自己紹介、住まい、生年月日が表示されます。<br>
 ・作成したコンテンツが時系列順に表示されます。<br>
 
 - アカウント編集
-[![Image from Gyazo](https://i.gyazo.com/f98fe8958654791f0a739c52b12744e4.gif)](https://gyazo.com/f98fe8958654791f0a739c52b12744e4)
+[![Image from Gyazo](https://i.gyazo.com/f8b3c0f3d31330e4ef9bebca9e239dbc.gif)](https://gyazo.com/f8b3c0f3d31330e4ef9bebca9e239dbc)
 ・自身のユーザー詳細ページの上部にある「プロフィールを編集」をクリックすると編集ページに遷移します。<br>
 ・ニックネーム、ユーザーネーム、自己紹介、住まい、生年月日、メールアドレスの変更をすることができます。<br>
 
