@@ -144,12 +144,12 @@
 
 ### コメント機能
 - コメント投稿
-[![Image from Gyazo](https://i.gyazo.com/f8015ab8672e8e1a27eca5e9030d667a.gif)](https://gyazo.com/f8015ab8672e8e1a27eca5e9030d667a)
+[![Image from Gyazo](https://i.gyazo.com/44bec571e33126d292e807f81a75998f.gif)](https://gyazo.com/44bec571e33126d292e807f81a75998f)
 ・コンテンツ詳細ページの下部にある「コメントを見る」をクリックするとコメント入力フォームが出現します。<br>
 ・コメントを入力し「送信」をクリックするとコメントを投稿することができます。<br>
 
 - コメント削除
-[![Image from Gyazo](https://i.gyazo.com/2670eff1017242b68ea603930a909115.gif)](https://gyazo.com/2670eff1017242b68ea603930a909115)
+[![Image from Gyazo](https://i.gyazo.com/3a087f59b5956f62b8113f47035723f6.gif)](https://gyazo.com/3a087f59b5956f62b8113f47035723f6)
 ・コメント投稿者本人にのみ「削除する」が表示されます。<br>
 ・「削除する」をクリックするとコメントを削除することができます。<br>
 
