@@ -134,12 +134,12 @@
 
 ### 検索機能
 - コンテンツ検索
-<a href="https://gyazo.com/89e65f12d7b3f51c1e5f8d5e7224b793"><img src="https://i.gyazo.com/89e65f12d7b3f51c1e5f8d5e7224b793.gif" alt="Image from Gyazo" width="1000"/></a>
+[![Image from Gyazo](https://i.gyazo.com/bf5252fbcc0caf125b8ca7386c1460e0.gif)](https://gyazo.com/bf5252fbcc0caf125b8ca7386c1460e0)
 ・ヘッダーの虫眼鏡のアイコンをクリックするとコンテンツ検索ページに遷移します。<br>
 ・各ページにある検索フォームを用いると、条件を絞ってコンテンツを検索することができます。<br>
 
 - ユーザー検索
-[![Image from Gyazo](https://i.gyazo.com/8221a30f63972ec50b17feba52ee1bcc.gif)](https://gyazo.com/8221a30f63972ec50b17feba52ee1bcc)
+[![Image from Gyazo](https://i.gyazo.com/591f856dba02b27c1c505186e3e9c3e3.gif)](https://gyazo.com/591f856dba02b27c1c505186e3e9c3e3)
 ・コンテンツ検索ページにある「ユーザー」をクリックするとユーザー検索ページに遷移します。<br>
 
 ### コメント機能
