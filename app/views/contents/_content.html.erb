@@ -19,13 +19,35 @@
           <i class="fa fa-lock fa-fw"></i>
         <% end %>
       </div>
-      <div class="main-content-center-list main-content-center-grade">
+      <% if content.grade.id == 2 %>
+        <div class="main-content-center-list main-content-center-grade" style="border: 2px solid navy; background-color: white; color: black;">
+      <% elsif content.grade.id == 3 %>
+        <div class="main-content-center-list main-content-center-grade" style="border: 2px solid green; background-color: white; color: black;">
+      <% elsif content.grade.id == 4 %>
+        <div class="main-content-center-list main-content-center-grade" style="border: 2px solid orange; background-color: white; color: black;">
+      <% elsif content.grade.id == 5 %>
+        <div class="main-content-center-list main-content-center-grade" style="border: 2px solid #FF66FF; background-color: white; color: black;">
+      <% elsif content.grade.id == 6 %>
+        <div class="main-content-center-list main-content-center-grade" style="border: 2px solid purple; background-color: white; color: black;">
+      <% else %>
+        <div class="main-content-center-list main-content-center-grade" style="border: 2px solid maroon; background-color: white; color: black;">
+      <% end %>
         <%= content.grade.name %>
       </div>
-      <div class="main-content-center-list main-content-center-subject">
+      <% if content.subject.id == 2 %>
+        <div class="main-content-center-list main-content-center-subject" style="border: 2px solid maroon; background-color: maroon;">
+      <% elsif content.subject.id == 3 %>
+        <div class="main-content-center-list main-content-center-subject" style="border: 2px solid navy; background-color: navy;">
+      <% elsif content.subject.id == 4 %>
+        <div class="main-content-center-list main-content-center-subject" style="border: 2px solid orange; background-color: orange;">
+      <% elsif content.subject.id == 5 %>
+        <div class="main-content-center-list main-content-center-subject" style="border: 2px solid green; background-color: green;">
+      <% else %>
+        <div class="main-content-center-list main-content-center-subject" style="border: 2px solid #FF66FF; background-color: #FF66FF;">
+      <% end %>
         <%= content.subject.name %>
       </div>
-      <div class="main-content-center-list main-content-center-category">
+      <div class="main-content-center-list main-content-center-category" style="background-color: #FFFFFF; color: #333;">
         <%= content.category %>
       </div>
     </div>
